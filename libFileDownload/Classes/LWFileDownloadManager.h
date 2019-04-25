@@ -13,13 +13,23 @@
 
 @interface LWFileDownloadManager : NSObject
 
-@property(nonatomic) float progress;
-@property(nonatomic) long long int downloadSize;
-@property(nonatomic, strong) NSMutableData *dataToDownload;
+//@property(nonatomic) BOOL serialDownload;
 
-@property(nonatomic, strong) NSURLSessionDataTask *curretnDataTask;
++ (instancetype)manager;
 
-+ (instancetype)shareInstance;
++ (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
+              requestHandleBlock:(NSMutableURLRequest *(^)(NSMutableURLRequest *))requestHandleBlock
+               showProgressBlock:(void (^)())showProgressBlock
+             updateProgressBlock:(void (^)(float))updateProgressBlock
+                   completeBlock:(void (^)())completeBlock;
+
+- (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
+               showProgressBlock:(void (^)())showProgressBlock
+             updateProgressBlock:(void (^)(float progress))progressBlock
+                   completeBlock:(void (^)())completeBlock;
+
+
+#pragma mark - Helper Method
 
 //创建目录
 + (BOOL)createDirectoryIfNotExsitPath:(NSString *)path;
@@ -35,7 +45,23 @@
 
 +(NSString *)filePathWithFileName:(NSString *)fileName;
 
-+ (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
+@end
+
+
+@interface LWFileDownloadTask : NSObject
+
+@property(nonatomic) float progress;
+@property(nonatomic) long long int downloadSize;
+@property(nonatomic, strong) NSMutableData *dataToDownload;
+
+@property(nonatomic, strong) NSURLSessionDataTask *curretnDataTask;
+
+@property(nonatomic, copy) NSMutableURLRequest * (^updateRequest)(NSMutableURLRequest *);
+
+
++ (instancetype)task;
+
+- (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
                showProgressBlock:(void (^)())showProgressBlock
              updateProgressBlock:(void (^)(float progress))progressBlock
                    completeBlock:(void (^)())completeBlock;

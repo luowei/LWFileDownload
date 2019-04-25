@@ -6,16 +6,11 @@
 #import "LWFileDownloadManager.h"
 
 
-@interface LWFileDownloadManager ()<NSURLSessionDataDelegate, NSURLSessionDelegate, NSURLSessionTaskDelegate>
+@interface LWFileDownloadManager ()<NSURLSessionDataDelegate>
 
 @property(nonatomic, copy) NSString *fileDirectoryPath;
-@property(nonatomic, copy) NSString *fileName;
-
-@property(nonatomic, copy) void (^showProgressBlock)(); //显示进度条表示真实开始下截
-@property(nonatomic, copy) void (^updateProgessBlock)(float);  //更新下载进度及进度条
-@property(nonatomic, copy) void (^completeBlock)(); //完成下载
-
 @property(nonatomic, copy) NSString *diretoryName;
+
 @end
 
 @implementation LWFileDownloadManager {
@@ -24,7 +19,7 @@
 
 static LWFileDownloadManager *_instance = nil;
 
-+ (instancetype)shareInstance {
++ (instancetype)manager {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _instance = [[self alloc] init];
@@ -32,7 +27,41 @@ static LWFileDownloadManager *_instance = nil;
     return _instance;
 }
 
-#pragma mark -
+
++ (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
+              requestHandleBlock:(NSMutableURLRequest *(^)(NSMutableURLRequest *))requestHandleBlock
+               showProgressBlock:(void (^)())showProgressBlock
+             updateProgressBlock:(void (^)(float))updateProgressBlock
+                   completeBlock:(void (^)())completeBlock {
+    //todo: 校验
+}
+
+- (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
+               showProgressBlock:(void (^)())showProgressBlock
+             updateProgressBlock:(void (^)(float progress))progressBlock
+                   completeBlock:(void (^)())completeBlock {
+
+    LWFileDownloadManager *manager = [LWFileDownloadManager manager];
+
+    LWFileDownloadTask *task = [LWFileDownloadTask task];
+
+    //DISPATCH_QUEUE_CONCURRENT DISPATCH_QUEUE_SERIAL
+
+
+    //并行下载,串行回调更新
+    task.updateRequest = ^NSMutableURLRequest *(NSMutableURLRequest *request){
+        [request setValue:@"XXXXXXXXXXXXXX" forHTTPHeaderField:@"aaaaaaa"];
+        return request;
+    };
+
+    [task downloadFileWithFileName:fileName URLString:urlString
+                 showProgressBlock:showProgressBlock
+               updateProgressBlock:progressBlock
+                     completeBlock:completeBlock];
+}
+
+
+#pragma mark - Helper Method
 
 - (NSString *)fileDirectoryPath {
 
@@ -94,35 +123,66 @@ static LWFileDownloadManager *_instance = nil;
 
 //是否存在fileName
 + (BOOL)exsitFileWithFileName:(NSString *)fileName {
-    LWFileDownloadManager *sef = [LWFileDownloadManager shareInstance];
+    LWFileDownloadManager *sef = [LWFileDownloadManager manager];
     NSString *filePath = [sef.fileDirectoryPath stringByAppendingPathComponent:fileName];
     BOOL exsit = [[NSFileManager defaultManager] fileExistsAtPath:filePath];
     return exsit;
 }
 
 +(NSString *)filePathWithFileName:(NSString *)fileName {
-    LWFileDownloadManager *sef = [LWFileDownloadManager shareInstance];
+    LWFileDownloadManager *sef = [LWFileDownloadManager manager];
     NSString *filePath = [sef.fileDirectoryPath stringByAppendingPathComponent:fileName];
     return filePath;
 }
 
+@end
+
+
+
+
+
+#pragma mark - LWFileDownloadTask
+
+@interface LWFileDownloadTask ()<NSURLSessionDataDelegate>
+
+@property(nonatomic, copy) NSString *fileName;
+
+@property(nonatomic, copy) void (^showProgressBlock)(); //显示进度条表示真实开始下截
+@property(nonatomic, copy) void (^updateProgessBlock)(float);  //更新下载进度及进度条
+@property(nonatomic, copy) void (^completeBlock)(); //完成下载
+
+@end
+
+
+
+@implementation LWFileDownloadTask
+
+
++ (instancetype)task {
+    LWFileDownloadTask *task = [[LWFileDownloadTask alloc] init];
+    return task;
+}
+
+#pragma mark -
+
+
 //下载文件
-+ (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
+- (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
                showProgressBlock:(void (^)())showProgressBlock
              updateProgressBlock:(void (^)(float progress))progressBlock
                    completeBlock:(void (^)())completeBlock {
-    LWFileDownloadManager *sef = [LWFileDownloadManager shareInstance];
+    LWFileDownloadTask *task = [LWFileDownloadTask task];
 
-    sef.showProgressBlock = showProgressBlock;
-    sef.updateProgessBlock = progressBlock;
-    sef.completeBlock = completeBlock;
-    [LWFileDownloadManager downloadCustomFileWithfileName:fileName URLString:urlString];
+    task.showProgressBlock = showProgressBlock;
+    task.updateProgessBlock = progressBlock;
+    task.completeBlock = completeBlock;
+    [task downloadCustomFileWithfileName:fileName URLString:urlString];
 }
 
 
 //下载
-+ (void)downloadCustomFileWithfileName:(NSString *)fileName URLString:(NSString *)urlString {
-    LWFileDownloadManager *sef = [LWFileDownloadManager shareInstance];
+- (void)downloadCustomFileWithfileName:(NSString *)fileName URLString:(NSString *)urlString {
+    LWFileDownloadTask *sef = [LWFileDownloadTask task];
 
     sef.fileName = fileName;
     BOOL exsit = [LWFileDownloadManager exsitFileWithFileName:fileName];
@@ -141,7 +201,13 @@ static LWFileDownloadManager *_instance = nil;
     //urlString = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+
     [request setValue:@"http://app.wodedata.com" forHTTPHeaderField:@"Referer"];
+
+    if(sef.updateRequest){
+        request = sef.updateRequest(request);
+    }
+
     NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration:defaultConfigObject
                                                                  delegate:sef
@@ -152,8 +218,8 @@ static LWFileDownloadManager *_instance = nil;
     }
     sef.curretnDataTask = [defaultSession dataTaskWithRequest:request];
     [sef.curretnDataTask resume];
-}
 
+}
 
 #pragma mark - NSURLSessionDataDelegate
 
@@ -190,18 +256,6 @@ static LWFileDownloadManager *_instance = nil;
             return;
         }
 
-        //下载完成
-        if(self.updateProgessBlock){
-            self.updateProgessBlock(1);
-        }
-
-        NSString *filePath = [self.fileDirectoryPath stringByAppendingPathComponent:self.fileName];
-        [LWFileDownloadManager writeData:self.dataToDownload toFilePath:filePath];
-
-        //更新UI
-        if (self.completeBlock) {
-            self.completeBlock();
-        }
     });
 }
 
@@ -209,6 +263,26 @@ static LWFileDownloadManager *_instance = nil;
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error {
     LWDLLog(@"--------%d:%s \n", __LINE__, __func__);
     LWDLLog(@"=====completed; error: %@", error);
+
+    LWFileDownloadManager *manager = [LWFileDownloadManager manager];
+
+    if (!error) {
+        //写入文件
+        NSString *filePath = [manager.fileDirectoryPath stringByAppendingPathComponent:self.fileName];
+        [LWFileDownloadManager writeData:self.dataToDownload toFilePath:filePath];
+    }
+
+    dispatch_async(dispatch_get_main_queue(), ^{
+        //更新UI
+        if (self.completeBlock) {
+            self.completeBlock();
+        }
+    });
+
 }
 
 @end
+
+
+
+
