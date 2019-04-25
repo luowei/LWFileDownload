@@ -1,0 +1,16 @@
+PODS:
+  - libFileDownload (0.1.0)
+
+DEPENDENCIES:
+  - libFileDownload (from `../`)
+
+EXTERNAL SOURCES:
+  libFileDownload:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  libFileDownload: 6b8b9df8eebe48714e37e13d1635e4841267f43b
+
+PODFILE CHECKSUM: 4b08daf6c640e192b2805444ca4c7c938ac86efc
+
+COCOAPODS: 1.5.3

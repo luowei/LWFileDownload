@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,12 +20,82 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jB0-RN-8of">
+                                <rect key="frame" x="310" y="89" width="39" height="30"/>
+                                <state key="normal" title="Task1"/>
+                                <connections>
+                                    <action selector="task1BtnAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="mq7-uD-Jua"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQa-d7-Ewd">
+                                <rect key="frame" x="310" y="144" width="41" height="30"/>
+                                <state key="normal" title="Task2"/>
+                                <connections>
+                                    <action selector="task2BtnAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="ywy-nl-8sA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zf-m6-xM1">
+                                <rect key="frame" x="310" y="201" width="41" height="30"/>
+                                <state key="normal" title="Task3"/>
+                                <connections>
+                                    <action selector="task3BtnAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="HQu-9f-ghN"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2i6-Th-fa3" userLabel="Progress1">
+                                <rect key="frame" x="34" y="103" width="250" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="sjW-Fu-u3U"/>
+                                </constraints>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3aC-E3-xAe" userLabel="Progress2">
+                                <rect key="frame" x="34" y="158" width="250" height="2"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="abS-9H-Hu1" userLabel="Progress3">
+                                <rect key="frame" x="34" y="215" width="250" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21H-SU-5Ou">
+                                <rect key="frame" x="164.5" y="318" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="allBtnAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="5b5-e0-fbc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4zf-m6-xM1" firstAttribute="top" secondItem="aQa-d7-Ewd" secondAttribute="bottom" constant="27" id="8m5-Gf-dcJ"/>
+                            <constraint firstItem="aQa-d7-Ewd" firstAttribute="leading" secondItem="jB0-RN-8of" secondAttribute="leading" id="9Sd-Z9-yGx"/>
+                            <constraint firstItem="abS-9H-Hu1" firstAttribute="centerY" secondItem="4zf-m6-xM1" secondAttribute="centerY" id="DOo-kX-2hY"/>
+                            <constraint firstItem="21H-SU-5Ou" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="Mbg-jh-dFi"/>
+                            <constraint firstItem="abS-9H-Hu1" firstAttribute="trailing" secondItem="3aC-E3-xAe" secondAttribute="trailing" id="YXe-GU-C9w"/>
+                            <constraint firstItem="abS-9H-Hu1" firstAttribute="leading" secondItem="3aC-E3-xAe" secondAttribute="leading" id="bYc-cu-d1u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jB0-RN-8of" secondAttribute="trailing" constant="10" id="dEV-Ms-Rvz"/>
+                            <constraint firstAttribute="trailing" secondItem="aQa-d7-Ewd" secondAttribute="trailing" constant="24" id="dlh-yq-Wea"/>
+                            <constraint firstItem="21H-SU-5Ou" firstAttribute="top" secondItem="abS-9H-Hu1" secondAttribute="bottom" constant="101" id="e0f-lh-jMc"/>
+                            <constraint firstItem="jB0-RN-8of" firstAttribute="centerY" secondItem="2i6-Th-fa3" secondAttribute="centerY" id="htg-8R-an2"/>
+                            <constraint firstItem="4zf-m6-xM1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aQa-d7-Ewd" secondAttribute="leading" id="j4Q-ge-njY"/>
+                            <constraint firstItem="2i6-Th-fa3" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="18" id="lhj-Ak-cTz"/>
+                            <constraint firstItem="3aC-E3-xAe" firstAttribute="centerY" secondItem="aQa-d7-Ewd" secondAttribute="centerY" id="mad-db-trW"/>
+                            <constraint firstAttribute="trailing" secondItem="4zf-m6-xM1" secondAttribute="trailing" constant="24" id="nTK-mH-lMw"/>
+                            <constraint firstItem="3aC-E3-xAe" firstAttribute="trailing" secondItem="2i6-Th-fa3" secondAttribute="trailing" id="nrJ-ug-ADV"/>
+                            <constraint firstItem="jB0-RN-8of" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="69" id="tiL-qP-Gck"/>
+                            <constraint firstItem="aQa-d7-Ewd" firstAttribute="top" secondItem="jB0-RN-8of" secondAttribute="bottom" constant="25" id="vYm-Yv-Xrb"/>
+                            <constraint firstItem="3aC-E3-xAe" firstAttribute="leading" secondItem="2i6-Th-fa3" secondAttribute="leading" id="xUP-FM-Sou"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="progress1Bar" destination="2i6-Th-fa3" id="kBP-gq-5DB"/>
+                        <outlet property="progress2Bar" destination="3aC-E3-xAe" id="jVK-h1-IkK"/>
+                        <outlet property="progress3Bar" destination="abS-9H-Hu1" id="hrA-Ya-G2S"/>
+                        <outlet property="task1Btn" destination="jB0-RN-8of" id="zT0-ui-5S5"/>
+                        <outlet property="task2Btn" destination="aQa-d7-Ewd" id="LCs-Ay-NAu"/>
+                        <outlet property="task3Btn" destination="4zf-m6-xM1" id="DDp-pa-MUe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
         </scene>
     </scenes>
 </document>
