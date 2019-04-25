@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'libFileDownload_Example' do
+  pod 'libFileDownload', :path => '../'
+
+  target 'libFileDownload_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
