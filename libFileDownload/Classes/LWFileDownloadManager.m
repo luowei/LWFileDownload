@@ -6,7 +6,7 @@
 #import "LWFileDownloadManager.h"
 
 
-@interface LWFileDownloadManager ()<NSURLSessionDataDelegate>
+@interface LWFileDownloadManager ()
 
 @property(nonatomic, copy) NSString *fileDirectoryPath;
 @property(nonatomic, copy) NSString *diretoryName;
@@ -19,7 +19,7 @@
 
 static LWFileDownloadManager *_instance = nil;
 
-+ (instancetype)manager {
++ (instancetype)shareManager {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _instance = [[self alloc] init];
@@ -28,37 +28,54 @@ static LWFileDownloadManager *_instance = nil;
 }
 
 
+//并行下载,串行回调CompleteBlock //DISPATCH_QUEUE_CONCURRENT DISPATCH_QUEUE_SERIAL
 + (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
               requestHandleBlock:(NSMutableURLRequest *(^)(NSMutableURLRequest *))requestHandleBlock
-               showProgressBlock:(void (^)())showProgressBlock
              updateProgressBlock:(void (^)(float))updateProgressBlock
-                   completeBlock:(void (^)())completeBlock {
-    //todo: 校验
-}
+             serialCompleteBlock:(void (^)())serialCompleteBlock {
 
-- (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
-               showProgressBlock:(void (^)())showProgressBlock
-             updateProgressBlock:(void (^)(float progress))progressBlock
-                   completeBlock:(void (^)())completeBlock {
+    //构造manager
+    LWFileDownloadManager *manager = [LWFileDownloadManager shareManager];
+    if (!manager.group) {
+        manager.group = dispatch_group_create();
+    }
+    if (!manager.s_queue) {
+        manager.s_queue = dispatch_get_main_queue();
+//        self.s_queue = dispatch_queue_create("com.koou.com.group.once.queue", DISPATCH_QUEUE_SERIAL);
+    }
 
-    LWFileDownloadManager *manager = [LWFileDownloadManager manager];
 
+    //新建任务
     LWFileDownloadTask *task = [LWFileDownloadTask task];
-
-    //DISPATCH_QUEUE_CONCURRENT DISPATCH_QUEUE_SERIAL
-
 
     //并行下载,串行回调更新
     task.updateRequest = ^NSMutableURLRequest *(NSMutableURLRequest *request){
-        [request setValue:@"XXXXXXXXXXXXXX" forHTTPHeaderField:@"aaaaaaa"];
-        return request;
+        NSMutableURLRequest *req = request;
+        if(requestHandleBlock){
+            req = requestHandleBlock(request);
+        }
+        return req;
+    };
+
+    task.completeBlock = ^{
+        //把block放到group中顺序执行
+        dispatch_group_async(manager.group, manager.s_queue, ^{
+            if(serialCompleteBlock){
+                serialCompleteBlock();
+            }
+        });
     };
 
     [task downloadFileWithFileName:fileName URLString:urlString
-                 showProgressBlock:showProgressBlock
-               updateProgressBlock:progressBlock
-                     completeBlock:completeBlock];
+               updateProgressBlock:updateProgressBlock
+                     completeBlock:task.completeBlock];
+
+//    dispatch_group_notify(manager.group, manager.s_queue, ^{});
+
 }
+
+
+
 
 
 #pragma mark - Helper Method
@@ -123,14 +140,14 @@ static LWFileDownloadManager *_instance = nil;
 
 //是否存在fileName
 + (BOOL)exsitFileWithFileName:(NSString *)fileName {
-    LWFileDownloadManager *sef = [LWFileDownloadManager manager];
+    LWFileDownloadManager *sef = [LWFileDownloadManager shareManager];
     NSString *filePath = [sef.fileDirectoryPath stringByAppendingPathComponent:fileName];
     BOOL exsit = [[NSFileManager defaultManager] fileExistsAtPath:filePath];
     return exsit;
 }
 
 +(NSString *)filePathWithFileName:(NSString *)fileName {
-    LWFileDownloadManager *sef = [LWFileDownloadManager manager];
+    LWFileDownloadManager *sef = [LWFileDownloadManager shareManager];
     NSString *filePath = [sef.fileDirectoryPath stringByAppendingPathComponent:fileName];
     return filePath;
 }
@@ -141,19 +158,7 @@ static LWFileDownloadManager *_instance = nil;
 
 
 
-#pragma mark - LWFileDownloadTask
-
-@interface LWFileDownloadTask ()<NSURLSessionDataDelegate>
-
-@property(nonatomic, copy) NSString *fileName;
-
-@property(nonatomic, copy) void (^showProgressBlock)(); //显示进度条表示真实开始下截
-@property(nonatomic, copy) void (^updateProgessBlock)(float);  //更新下载进度及进度条
-@property(nonatomic, copy) void (^completeBlock)(); //完成下载
-
-@end
-
-
+#pragma mark - LWFileDownloadTask Concurrence Download
 
 @implementation LWFileDownloadTask
 
@@ -168,31 +173,28 @@ static LWFileDownloadManager *_instance = nil;
 
 //下载文件
 - (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
-               showProgressBlock:(void (^)())showProgressBlock
              updateProgressBlock:(void (^)(float progress))progressBlock
                    completeBlock:(void (^)())completeBlock {
-    LWFileDownloadTask *task = [LWFileDownloadTask task];
 
-    task.showProgressBlock = showProgressBlock;
-    task.updateProgessBlock = progressBlock;
-    task.completeBlock = completeBlock;
-    [task downloadCustomFileWithfileName:fileName URLString:urlString];
+//    task.showProgressBlock = showProgressBlock;
+    self.updateProgessBlock = progressBlock;
+    self.completeBlock = completeBlock;
+    [self downloadCustomFileWithfileName:fileName URLString:urlString];
 }
 
 
 //下载
 - (void)downloadCustomFileWithfileName:(NSString *)fileName URLString:(NSString *)urlString {
-    LWFileDownloadTask *sef = [LWFileDownloadTask task];
 
-    sef.fileName = fileName;
+    self.fileName = fileName;
     BOOL exsit = [LWFileDownloadManager exsitFileWithFileName:fileName];
     if (exsit) {  //如果已经下载过了
         //更新UI
-        if(sef.updateProgessBlock){
-            sef.updateProgessBlock(1.0f);
+        if(self.updateProgessBlock){
+            self.updateProgessBlock(1.0f);
         }
-        if(sef.completeBlock){
-            sef.completeBlock();
+        if(self.completeBlock){
+            self.completeBlock();
         }
         return;
     }
@@ -204,20 +206,20 @@ static LWFileDownloadManager *_instance = nil;
 
     [request setValue:@"http://app.wodedata.com" forHTTPHeaderField:@"Referer"];
 
-    if(sef.updateRequest){
-        request = sef.updateRequest(request);
+    if(self.updateRequest){
+        request = self.updateRequest(request);
     }
 
     NSURLSessionConfiguration *defaultConfigObject = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *defaultSession = [NSURLSession sessionWithConfiguration:defaultConfigObject
-                                                                 delegate:sef
+                                                                 delegate:self
                                                             delegateQueue:[NSOperationQueue mainQueue]];
 
-    if(sef.curretnDataTask && sef.curretnDataTask.state != NSURLSessionTaskStateCompleted){   //取消原来的任务
-        [sef.curretnDataTask cancel];
+    if(self.curretnDataTask && self.curretnDataTask.state != NSURLSessionTaskStateCompleted){   //取消原来的任务
+        [self.curretnDataTask cancel];
     }
-    sef.curretnDataTask = [defaultSession dataTaskWithRequest:request];
-    [sef.curretnDataTask resume];
+    self.curretnDataTask = [defaultSession dataTaskWithRequest:request];
+    [self.curretnDataTask resume];
 
 }
 
@@ -232,11 +234,11 @@ static LWFileDownloadManager *_instance = nil;
     self.downloadSize = [response expectedContentLength];
     self.dataToDownload = [[NSMutableData alloc] init];
 
-    dispatch_async(dispatch_get_main_queue(), ^{
-        if(self.showProgressBlock){ //显示下载进度提示,开始显示下载进度
-            self.showProgressBlock();
-        }
-    });
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        if(self.showProgressBlock){ //显示下载进度提示,开始显示下载进度
+//            self.showProgressBlock();
+//        }
+//    });
 }
 
 - (void)URLSession:(NSURLSession *)session dataTask:(NSURLSessionDataTask *)dataTask didReceiveData:(NSData *)data {
@@ -264,7 +266,7 @@ static LWFileDownloadManager *_instance = nil;
     LWDLLog(@"--------%d:%s \n", __LINE__, __func__);
     LWDLLog(@"=====completed; error: %@", error);
 
-    LWFileDownloadManager *manager = [LWFileDownloadManager manager];
+    LWFileDownloadManager *manager = [LWFileDownloadManager shareManager];
 
     if (!error) {
         //写入文件

@@ -13,20 +13,18 @@
 
 @interface LWFileDownloadManager : NSObject
 
+
+@property(nonatomic, strong) dispatch_group_t group;
+@property(nonatomic, strong) dispatch_queue_main_t s_queue;
 //@property(nonatomic) BOOL serialDownload;
 
-+ (instancetype)manager;
++ (instancetype)shareManager;
 
 + (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
               requestHandleBlock:(NSMutableURLRequest *(^)(NSMutableURLRequest *))requestHandleBlock
-               showProgressBlock:(void (^)())showProgressBlock
              updateProgressBlock:(void (^)(float))updateProgressBlock
-                   completeBlock:(void (^)())completeBlock;
+             serialCompleteBlock:(void (^)())serialCompleteBlock;
 
-- (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
-               showProgressBlock:(void (^)())showProgressBlock
-             updateProgressBlock:(void (^)(float progress))progressBlock
-                   completeBlock:(void (^)())completeBlock;
 
 
 #pragma mark - Helper Method
@@ -48,7 +46,14 @@
 @end
 
 
-@interface LWFileDownloadTask : NSObject
+@interface LWFileDownloadTask : NSObject<NSURLSessionDataDelegate>
+
+@property(nonatomic, copy) NSString *fileName;
+
+@property(nonatomic, copy) void (^showProgressBlock)(); //显示进度条表示真实开始下截
+@property(nonatomic, copy) void (^updateProgessBlock)(float);  //更新下载进度及进度条
+@property(nonatomic, copy) void (^completeBlock)(); //完成下载
+
 
 @property(nonatomic) float progress;
 @property(nonatomic) long long int downloadSize;
@@ -62,7 +67,6 @@
 + (instancetype)task;
 
 - (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
-               showProgressBlock:(void (^)())showProgressBlock
              updateProgressBlock:(void (^)(float progress))progressBlock
                    completeBlock:(void (^)())completeBlock;
 
