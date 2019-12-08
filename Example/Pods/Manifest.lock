@@ -1,16 +1,16 @@
 PODS:
-  - libFileDownload (0.1.0)
+  - LWFileDownload (0.1.0)
 
 DEPENDENCIES:
-  - libFileDownload (from `../`)
+  - LWFileDownload (from `../`)
 
 EXTERNAL SOURCES:
-  libFileDownload:
+  LWFileDownload:
     :path: "../"
 
 SPEC CHECKSUMS:
-  libFileDownload: 6b8b9df8eebe48714e37e13d1635e4841267f43b
+  LWFileDownload: 42204ec92ccefb6269e3ceb91c729fd7a2eef160
 
-PODFILE CHECKSUM: 4b08daf6c640e192b2805444ca4c7c938ac86efc
+PODFILE CHECKSUM: 7935a4549bdd82949bf4fd84cc9325c2af99f2b6
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

@@ -1,9 +1,9 @@
 {
-  "name": "libFileDownload",
+  "name": "LWFileDownload",
   "version": "0.1.0",
-  "summary": "A short description of libFileDownload.",
+  "summary": "A short description of LWFileDownload.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/luowei/libFileDownload",
+  "homepage": "https://github.com/luowei/LWFileDownload",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,11 @@
     "luowei": "luowei@wodedata.com"
   },
   "source": {
-    "git": "https://github.com/luowei/libFileDownload.git",
+    "git": "https://github.com/luowei/LWFileDownload.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "libFileDownload/Classes/**/*"
+  "source_files": "LWFileDownload/Classes/**/*"
 }

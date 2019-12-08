@@ -7,238 +7,236 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		287CC68D763AD54D1FDF9013432A3BDA /* libFileDownload-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E184AE3E36F70EDF71036BE68B69DC2 /* libFileDownload-dummy.m */; };
-		6D36CA40F01C9AF9E28D9E5F17BA1CA7 /* Pods-libFileDownload_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C236BECDFCA25D6B07AC1F9228E7165D /* Pods-libFileDownload_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87134174189F7240C477BBC0C1E0A52D /* LWFileDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AF02EA4643BB1F29E237000A0EB0A1 /* LWFileDownloadManager.m */; };
-		C0B3C9A562327B9364F9E417B3119111 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		CA3CCAF40A5B8AE0014F2857BC63E729 /* libFileDownload-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF0298BBB24E66776660CA5B22EE396 /* libFileDownload-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF8E5B0AA2C311E473A095040D4D3AA2 /* Pods-libFileDownload_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B701BF9B62E5190D62FB0C02A233B4 /* Pods-libFileDownload_Example-dummy.m */; };
-		EAF025813687446D417040B38F235994 /* LWFileDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 74965B84B9CD249AF14E1356907EE122 /* LWFileDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDDC20F7CF8684977721D7262C71D09E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		1FBB855AF4E7E145D374541E6708867F /* LWFileDownload-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E661334AB92165D45029F590B9CA19 /* LWFileDownload-dummy.m */; };
+		56B163A50657BEA930E01F847C70C9CA /* LWFileDownload-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D43D7275B00A380B7399FB926A3C0F /* LWFileDownload-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0602A59385DC9310C362320147D6B5 /* Pods-LWFileDownload_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF996F37812A9D8191EB7350D860396 /* Pods-LWFileDownload_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80FE3B19B072656C630DB8D8CE986B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		90D0827FAAE5E220586DDE3C0695B9A6 /* LWFileDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D94BF6BF1CFBE82E827CC37ADC0ABDF5 /* LWFileDownloadManager.m */; };
+		9990DB7628A0611DAFC79DC01F169F89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9D759E752CE6717D1FCD43106B15BC1A /* Pods-LWFileDownload_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D970C72250AD68D8A5E3D3F576F04076 /* Pods-LWFileDownload_Example-dummy.m */; };
+		AF0C09B96777BDA7F2B009BAC42DA94F /* LWFileDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5028751E556FA02F88E8801E41AC195F /* LWFileDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0EA96CFAAE27B46917D2A73270D934FD /* PBXContainerItemProxy */ = {
+		7F7881D7495D9B2E3E8DBFA287E8DB45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8F261BDBED7568093EBD6AA589A08E07;
-			remoteInfo = libFileDownload;
+			remoteGlobalIDString = 8CD9981B74F4E8AD66DAB5AC70756D5C;
+			remoteInfo = LWFileDownload;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16C84DAEDD1059F699121114DB9FF559 /* libFileDownload.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = libFileDownload.modulemap; sourceTree = "<group>"; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		40555B0539260722DF2538C637073329 /* libFileDownload.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = libFileDownload.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4865ABB2292B632126F6D9CAD32D8CDD /* Pods-libFileDownload_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-libFileDownload_Example-frameworks.sh"; sourceTree = "<group>"; };
-		4FEADBDF7D40D26CD794FE7538F68129 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5537D53039BFD79F493430C7BCCA6866 /* Pods-libFileDownload_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-libFileDownload_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5F20FD2DBB9194037FC41C9B9A5DA2EE /* libFileDownload.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libFileDownload.xcconfig; sourceTree = "<group>"; };
-		604F0EC50F816A19C1EFB139498363F0 /* Pods-libFileDownload_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-libFileDownload_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		60A4BFB2047858CD4CEC7360A06012BA /* Pods-libFileDownload_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-libFileDownload_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6860B9DB0FF41D9D0E399F146D8F73E4 /* Pods-libFileDownload_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-libFileDownload_Example-resources.sh"; sourceTree = "<group>"; };
-		74965B84B9CD249AF14E1356907EE122 /* LWFileDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LWFileDownloadManager.h; path = libFileDownload/Classes/LWFileDownloadManager.h; sourceTree = "<group>"; };
-		85AF02EA4643BB1F29E237000A0EB0A1 /* LWFileDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LWFileDownloadManager.m; path = libFileDownload/Classes/LWFileDownloadManager.m; sourceTree = "<group>"; };
-		8E184AE3E36F70EDF71036BE68B69DC2 /* libFileDownload-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libFileDownload-dummy.m"; sourceTree = "<group>"; };
-		8EBB91AAB31A09AC573873C49CBDCD92 /* Pods_libFileDownload_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_libFileDownload_Example.framework; path = "Pods-libFileDownload_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B4691769CB95B0346BBBB451D19BEF8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1B701BF9B62E5190D62FB0C02A233B4 /* Pods-libFileDownload_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-libFileDownload_Example-dummy.m"; sourceTree = "<group>"; };
-		BA6434FEA6A95CD173F98FEEAA5211BD /* Pods-libFileDownload_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-libFileDownload_Example.modulemap"; sourceTree = "<group>"; };
-		BDF0298BBB24E66776660CA5B22EE396 /* libFileDownload-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libFileDownload-umbrella.h"; sourceTree = "<group>"; };
-		C236BECDFCA25D6B07AC1F9228E7165D /* Pods-libFileDownload_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-libFileDownload_Example-umbrella.h"; sourceTree = "<group>"; };
-		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CDA94A8D7EB6DCBB34F487AAE238DC4D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		D5C362810A61D573BAA127A6914CF65C /* libFileDownload-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libFileDownload-prefix.pch"; sourceTree = "<group>"; };
-		DAF831FD1C753861306F1E7879861B98 /* Pods-libFileDownload_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-libFileDownload_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F59735183AF458A645E30A3B3E712714 /* libFileDownload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = libFileDownload.framework; path = libFileDownload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F70BD16C10798E8BFEB2A1A239A73269 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0179E27BC6624C1EDAB8281DACDE560A /* Pods-LWFileDownload_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LWFileDownload_Example-Info.plist"; sourceTree = "<group>"; };
+		093CE317371DD7EAAA4BB594E98673CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		15E9A6219EDB3CFF7F98A0882BCB65EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		20E16BC3D457853E6353EBCBD10D5033 /* LWFileDownload-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LWFileDownload-prefix.pch"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38E661334AB92165D45029F590B9CA19 /* LWFileDownload-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LWFileDownload-dummy.m"; sourceTree = "<group>"; };
+		3967D79980AE0881B4D4367928E15251 /* Pods-LWFileDownload_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LWFileDownload_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4639415C68078ACAC8F4B374ED9A46C9 /* LWFileDownload.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LWFileDownload.modulemap; sourceTree = "<group>"; };
+		4D8521EF13BDA1DCDABABE8D8A61B890 /* Pods-LWFileDownload_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LWFileDownload_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5028751E556FA02F88E8801E41AC195F /* LWFileDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LWFileDownloadManager.h; path = LWFileDownload/Classes/LWFileDownloadManager.h; sourceTree = "<group>"; };
+		557CB26D8EECF1A22D1075B5B5020087 /* LWFileDownload.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LWFileDownload.xcconfig; sourceTree = "<group>"; };
+		5DC5570CE4ABE72C2B38EDD8BEF8E192 /* LWFileDownload-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LWFileDownload-Info.plist"; sourceTree = "<group>"; };
+		65CCFBAF001818B0B4C19E049C53B198 /* Pods-LWFileDownload_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWFileDownload_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7767C7742BE858322A6013AB1F1BB476 /* Pods-LWFileDownload_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LWFileDownload_Example.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9FA1E4497B19ADE48410B2A854198CE /* Pods_LWFileDownload_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LWFileDownload_Example.framework; path = "Pods-LWFileDownload_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C690EF4B91E96205D9736F1C55D7CA4B /* LWFileDownload.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LWFileDownload.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D4FA4E25C8EDDA5FCECF7F9B32DFFF7E /* Pods-LWFileDownload_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LWFileDownload_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D6D43D7275B00A380B7399FB926A3C0F /* LWFileDownload-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LWFileDownload-umbrella.h"; sourceTree = "<group>"; };
+		D6E0DA75C6524FCDB188F89FAB99417F /* Pods-LWFileDownload_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWFileDownload_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D94BF6BF1CFBE82E827CC37ADC0ABDF5 /* LWFileDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LWFileDownloadManager.m; path = LWFileDownload/Classes/LWFileDownloadManager.m; sourceTree = "<group>"; };
+		D970C72250AD68D8A5E3D3F576F04076 /* Pods-LWFileDownload_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LWFileDownload_Example-dummy.m"; sourceTree = "<group>"; };
+		DCF996F37812A9D8191EB7350D860396 /* Pods-LWFileDownload_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LWFileDownload_Example-umbrella.h"; sourceTree = "<group>"; };
+		F78F44828F18D2CF0E25FA30F4D8872C /* LWFileDownload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LWFileDownload.framework; path = LWFileDownload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D5EF7BDC321014C6757909B0846FECC /* Frameworks */ = {
+		940A2709194E41E26947C6F7BE614093 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDDC20F7CF8684977721D7262C71D09E /* Foundation.framework in Frameworks */,
+				9990DB7628A0611DAFC79DC01F169F89 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE20CDC6496B4D6E9BED379479BA1BF7 /* Frameworks */ = {
+		E32E02097A9B6302545A92D1134A5CFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B3C9A562327B9364F9E417B3119111 /* Foundation.framework in Frameworks */,
+				80FE3B19B072656C630DB8D8CE986B3B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A61EE202EE5D13BEE3D8C35052A48EA /* libFileDownload */ = {
+		03F68C4AFA12B445AC6B8F4024B0261C /* LWFileDownload */ = {
 			isa = PBXGroup;
 			children = (
-				74965B84B9CD249AF14E1356907EE122 /* LWFileDownloadManager.h */,
-				85AF02EA4643BB1F29E237000A0EB0A1 /* LWFileDownloadManager.m */,
-				2D755994E8AC3B0456259DFFDFF92B4C /* Pod */,
-				B3452E2918E3F34E9DA742B2A790B917 /* Support Files */,
+				5028751E556FA02F88E8801E41AC195F /* LWFileDownloadManager.h */,
+				D94BF6BF1CFBE82E827CC37ADC0ABDF5 /* LWFileDownloadManager.m */,
+				24F911BFB22679D117DA032871127B9D /* Pod */,
+				5B8031C210E1284476E2BA72A6795F82 /* Support Files */,
 			);
-			name = libFileDownload;
+			name = LWFileDownload;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		2D755994E8AC3B0456259DFFDFF92B4C /* Pod */ = {
+		24F911BFB22679D117DA032871127B9D /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				40555B0539260722DF2538C637073329 /* libFileDownload.podspec */,
-				F70BD16C10798E8BFEB2A1A239A73269 /* LICENSE */,
-				CDA94A8D7EB6DCBB34F487AAE238DC4D /* README.md */,
+				15E9A6219EDB3CFF7F98A0882BCB65EE /* LICENSE */,
+				C690EF4B91E96205D9736F1C55D7CA4B /* LWFileDownload.podspec */,
+				093CE317371DD7EAAA4BB594E98673CC /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		5B6AB0D224F29085C6C44486BD18BB2B /* Pods-libFileDownload_Example */ = {
+		4D362153242CED36DB8AF5D401C4617D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4FEADBDF7D40D26CD794FE7538F68129 /* Info.plist */,
-				BA6434FEA6A95CD173F98FEEAA5211BD /* Pods-libFileDownload_Example.modulemap */,
-				5537D53039BFD79F493430C7BCCA6866 /* Pods-libFileDownload_Example-acknowledgements.markdown */,
-				604F0EC50F816A19C1EFB139498363F0 /* Pods-libFileDownload_Example-acknowledgements.plist */,
-				A1B701BF9B62E5190D62FB0C02A233B4 /* Pods-libFileDownload_Example-dummy.m */,
-				4865ABB2292B632126F6D9CAD32D8CDD /* Pods-libFileDownload_Example-frameworks.sh */,
-				6860B9DB0FF41D9D0E399F146D8F73E4 /* Pods-libFileDownload_Example-resources.sh */,
-				C236BECDFCA25D6B07AC1F9228E7165D /* Pods-libFileDownload_Example-umbrella.h */,
-				60A4BFB2047858CD4CEC7360A06012BA /* Pods-libFileDownload_Example.debug.xcconfig */,
-				DAF831FD1C753861306F1E7879861B98 /* Pods-libFileDownload_Example.release.xcconfig */,
+				F78F44828F18D2CF0E25FA30F4D8872C /* LWFileDownload.framework */,
+				A9FA1E4497B19ADE48410B2A854198CE /* Pods_LWFileDownload_Example.framework */,
 			);
-			name = "Pods-libFileDownload_Example";
-			path = "Target Support Files/Pods-libFileDownload_Example";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		5CDF9641CE3D4FAE29F67F36F0C57692 /* Development Pods */ = {
+		565DE9C4D2DCF90CF3D29291CB23958A /* Pods-LWFileDownload_Example */ = {
 			isa = PBXGroup;
 			children = (
-				1A61EE202EE5D13BEE3D8C35052A48EA /* libFileDownload */,
+				7767C7742BE858322A6013AB1F1BB476 /* Pods-LWFileDownload_Example.modulemap */,
+				3967D79980AE0881B4D4367928E15251 /* Pods-LWFileDownload_Example-acknowledgements.markdown */,
+				D4FA4E25C8EDDA5FCECF7F9B32DFFF7E /* Pods-LWFileDownload_Example-acknowledgements.plist */,
+				D970C72250AD68D8A5E3D3F576F04076 /* Pods-LWFileDownload_Example-dummy.m */,
+				4D8521EF13BDA1DCDABABE8D8A61B890 /* Pods-LWFileDownload_Example-frameworks.sh */,
+				0179E27BC6624C1EDAB8281DACDE560A /* Pods-LWFileDownload_Example-Info.plist */,
+				DCF996F37812A9D8191EB7350D860396 /* Pods-LWFileDownload_Example-umbrella.h */,
+				65CCFBAF001818B0B4C19E049C53B198 /* Pods-LWFileDownload_Example.debug.xcconfig */,
+				D6E0DA75C6524FCDB188F89FAB99417F /* Pods-LWFileDownload_Example.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Pods-LWFileDownload_Example";
+			path = "Target Support Files/Pods-LWFileDownload_Example";
 			sourceTree = "<group>";
 		};
-		71A55C7AD798CAC39C63EDF194910A79 /* Targets Support Files */ = {
+		5B8031C210E1284476E2BA72A6795F82 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5B6AB0D224F29085C6C44486BD18BB2B /* Pods-libFileDownload_Example */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		B3452E2918E3F34E9DA742B2A790B917 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9B4691769CB95B0346BBBB451D19BEF8 /* Info.plist */,
-				16C84DAEDD1059F699121114DB9FF559 /* libFileDownload.modulemap */,
-				5F20FD2DBB9194037FC41C9B9A5DA2EE /* libFileDownload.xcconfig */,
-				8E184AE3E36F70EDF71036BE68B69DC2 /* libFileDownload-dummy.m */,
-				D5C362810A61D573BAA127A6914CF65C /* libFileDownload-prefix.pch */,
-				BDF0298BBB24E66776660CA5B22EE396 /* libFileDownload-umbrella.h */,
+				4639415C68078ACAC8F4B374ED9A46C9 /* LWFileDownload.modulemap */,
+				557CB26D8EECF1A22D1075B5B5020087 /* LWFileDownload.xcconfig */,
+				38E661334AB92165D45029F590B9CA19 /* LWFileDownload-dummy.m */,
+				5DC5570CE4ABE72C2B38EDD8BEF8E192 /* LWFileDownload-Info.plist */,
+				20E16BC3D457853E6353EBCBD10D5033 /* LWFileDownload-prefix.pch */,
+				D6D43D7275B00A380B7399FB926A3C0F /* LWFileDownload-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/libFileDownload";
+			path = "Example/Pods/Target Support Files/LWFileDownload";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				24390EFD555DD124430DFF9724065945 /* Podfile */,
-				5CDF9641CE3D4FAE29F67F36F0C57692 /* Development Pods */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D3BE1A332802A86DA2096E7043EA8B15 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				EF470EDA1E33BD03581649FE0D998CFA /* Products */,
-				71A55C7AD798CAC39C63EDF194910A79 /* Targets Support Files */,
+				4D362153242CED36DB8AF5D401C4617D /* Products */,
+				F694971BA0A5A5ECD792671611CADA3C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EF470EDA1E33BD03581649FE0D998CFA /* Products */ = {
+		D3BE1A332802A86DA2096E7043EA8B15 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F59735183AF458A645E30A3B3E712714 /* libFileDownload.framework */,
-				8EBB91AAB31A09AC573873C49CBDCD92 /* Pods_libFileDownload_Example.framework */,
+				03F68C4AFA12B445AC6B8F4024B0261C /* LWFileDownload */,
 			);
-			name = Products;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F694971BA0A5A5ECD792671611CADA3C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				565DE9C4D2DCF90CF3D29291CB23958A /* Pods-LWFileDownload_Example */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		269D1AD2ECFB5D631D3CB912A252C567 /* Headers */ = {
+		2957A7C83BB50D74C47BA58B2007358D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D36CA40F01C9AF9E28D9E5F17BA1CA7 /* Pods-libFileDownload_Example-umbrella.h in Headers */,
+				6A0602A59385DC9310C362320147D6B5 /* Pods-LWFileDownload_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CFFDD9A2E87F8EF5703B7464B92E6CB /* Headers */ = {
+		82396349E2BE16E58138F090BE59A30E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3CCAF40A5B8AE0014F2857BC63E729 /* libFileDownload-umbrella.h in Headers */,
-				EAF025813687446D417040B38F235994 /* LWFileDownloadManager.h in Headers */,
+				56B163A50657BEA930E01F847C70C9CA /* LWFileDownload-umbrella.h in Headers */,
+				AF0C09B96777BDA7F2B009BAC42DA94F /* LWFileDownloadManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1FA4509F285806971636D15EA40CF6EE /* Pods-libFileDownload_Example */ = {
+		8CD9981B74F4E8AD66DAB5AC70756D5C /* LWFileDownload */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06210F54F3813D930809F39736F19EA9 /* Build configuration list for PBXNativeTarget "Pods-libFileDownload_Example" */;
+			buildConfigurationList = BB4AF23D952C0C8C498217D777FB8D24 /* Build configuration list for PBXNativeTarget "LWFileDownload" */;
 			buildPhases = (
-				269D1AD2ECFB5D631D3CB912A252C567 /* Headers */,
-				B516836233098272BD3557D5B3EA28B1 /* Sources */,
-				0D5EF7BDC321014C6757909B0846FECC /* Frameworks */,
-				B77C57CECE64C18BEB389FE5C870FED3 /* Resources */,
+				82396349E2BE16E58138F090BE59A30E /* Headers */,
+				068EC7E5E20F37E8A6BE0285AE281DF7 /* Sources */,
+				940A2709194E41E26947C6F7BE614093 /* Frameworks */,
+				83BB491E6FBECAF03BC2F169B9AC73AC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				240008BB67791E54CE29A9C786457191 /* PBXTargetDependency */,
 			);
-			name = "Pods-libFileDownload_Example";
-			productName = "Pods-libFileDownload_Example";
-			productReference = 8EBB91AAB31A09AC573873C49CBDCD92 /* Pods_libFileDownload_Example.framework */;
+			name = LWFileDownload;
+			productName = LWFileDownload;
+			productReference = F78F44828F18D2CF0E25FA30F4D8872C /* LWFileDownload.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8F261BDBED7568093EBD6AA589A08E07 /* libFileDownload */ = {
+		A6C69ECA2C6F19FE125C630B5BD8AA96 /* Pods-LWFileDownload_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BFACB0BD83ABB2432F961C173DAE2F9 /* Build configuration list for PBXNativeTarget "libFileDownload" */;
+			buildConfigurationList = D569EEC9E64ADEA5E4C246790C006F2E /* Build configuration list for PBXNativeTarget "Pods-LWFileDownload_Example" */;
 			buildPhases = (
-				9CFFDD9A2E87F8EF5703B7464B92E6CB /* Headers */,
-				608ECF4C42C28F077995645DDD602084 /* Sources */,
-				FE20CDC6496B4D6E9BED379479BA1BF7 /* Frameworks */,
-				5AE5B111CABD7A03C295622E539CB257 /* Resources */,
+				2957A7C83BB50D74C47BA58B2007358D /* Headers */,
+				1BECA4B2CF4B68E0F47D8FA86C587878 /* Sources */,
+				E32E02097A9B6302545A92D1134A5CFA /* Frameworks */,
+				F2D677E58152AA5891E5C2CDA8196618 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				146B463E9F7AC4F3FDF1B36305E4DC1E /* PBXTargetDependency */,
 			);
-			name = libFileDownload;
-			productName = libFileDownload;
-			productReference = F59735183AF458A645E30A3B3E712714 /* libFileDownload.framework */;
+			name = "Pods-LWFileDownload_Example";
+			productName = "Pods-LWFileDownload_Example";
+			productReference = A9FA1E4497B19ADE48410B2A854198CE /* Pods_LWFileDownload_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -247,36 +245,37 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = EF470EDA1E33BD03581649FE0D998CFA /* Products */;
+			productRefGroup = 4D362153242CED36DB8AF5D401C4617D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F261BDBED7568093EBD6AA589A08E07 /* libFileDownload */,
-				1FA4509F285806971636D15EA40CF6EE /* Pods-libFileDownload_Example */,
+				8CD9981B74F4E8AD66DAB5AC70756D5C /* LWFileDownload */,
+				A6C69ECA2C6F19FE125C630B5BD8AA96 /* Pods-LWFileDownload_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5AE5B111CABD7A03C295622E539CB257 /* Resources */ = {
+		83BB491E6FBECAF03BC2F169B9AC73AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B77C57CECE64C18BEB389FE5C870FED3 /* Resources */ = {
+		F2D677E58152AA5891E5C2CDA8196618 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,70 +285,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		608ECF4C42C28F077995645DDD602084 /* Sources */ = {
+		068EC7E5E20F37E8A6BE0285AE281DF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287CC68D763AD54D1FDF9013432A3BDA /* libFileDownload-dummy.m in Sources */,
-				87134174189F7240C477BBC0C1E0A52D /* LWFileDownloadManager.m in Sources */,
+				1FBB855AF4E7E145D374541E6708867F /* LWFileDownload-dummy.m in Sources */,
+				90D0827FAAE5E220586DDE3C0695B9A6 /* LWFileDownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B516836233098272BD3557D5B3EA28B1 /* Sources */ = {
+		1BECA4B2CF4B68E0F47D8FA86C587878 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF8E5B0AA2C311E473A095040D4D3AA2 /* Pods-libFileDownload_Example-dummy.m in Sources */,
+				9D759E752CE6717D1FCD43106B15BC1A /* Pods-LWFileDownload_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		240008BB67791E54CE29A9C786457191 /* PBXTargetDependency */ = {
+		146B463E9F7AC4F3FDF1B36305E4DC1E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = libFileDownload;
-			target = 8F261BDBED7568093EBD6AA589A08E07 /* libFileDownload */;
-			targetProxy = 0EA96CFAAE27B46917D2A73270D934FD /* PBXContainerItemProxy */;
+			name = LWFileDownload;
+			target = 8CD9981B74F4E8AD66DAB5AC70756D5C /* LWFileDownload */;
+			targetProxy = 7F7881D7495D9B2E3E8DBFA287E8DB45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		173BDC4C95CC33F13BBC38B8534E8CA2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAF831FD1C753861306F1E7879861B98 /* Pods-libFileDownload_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-libFileDownload_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-libFileDownload_Example/Pods-libFileDownload_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5EA5006381E12BC9AA7DEEBC8BCE4905 /* Release */ = {
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -381,8 +346,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -406,16 +369,15 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		64E7F689DBC8189F4C335BC829DAB12C /* Debug */ = {
+		60CF4CA34DDF08AF8BEF4018B9BB1332 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60A4BFB2047858CD4CEC7360A06012BA /* Pods-libFileDownload_Example.debug.xcconfig */;
+			baseConfigurationReference = 557CB26D8EECF1A22D1075B5B5020087 /* LWFileDownload.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -425,57 +387,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-libFileDownload_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LWFileDownload/LWFileDownload-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LWFileDownload/LWFileDownload-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-libFileDownload_Example/Pods-libFileDownload_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/LWFileDownload/LWFileDownload.modulemap";
+				PRODUCT_MODULE_NAME = LWFileDownload;
+				PRODUCT_NAME = LWFileDownload;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		B51DA4FE1CFE76F85531B09CD4A7900D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F20FD2DBB9194037FC41C9B9A5DA2EE /* libFileDownload.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/libFileDownload/libFileDownload-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libFileDownload/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/libFileDownload/libFileDownload.modulemap";
-				PRODUCT_MODULE_NAME = libFileDownload;
-				PRODUCT_NAME = libFileDownload;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B64E2C722A3EAD054D380F489370F012 /* Debug */ = {
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -507,8 +436,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -536,14 +463,47 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		E4223E36336A4A43CC53F679EC0A5DB2 /* Debug */ = {
+		89E45A56D8C011E6CAE6DF4FE3AE2D9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F20FD2DBB9194037FC41C9B9A5DA2EE /* libFileDownload.xcconfig */;
+			baseConfigurationReference = 65CCFBAF001818B0B4C19E049C53B198 /* Pods-LWFileDownload_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LWFileDownload_Example/Pods-LWFileDownload_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LWFileDownload_Example/Pods-LWFileDownload_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D08C938B6A8F6A451BE51F24684E74CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 557CB26D8EECF1A22D1075B5B5020087 /* LWFileDownload.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -554,49 +514,84 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/libFileDownload/libFileDownload-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/libFileDownload/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LWFileDownload/LWFileDownload-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LWFileDownload/LWFileDownload-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/libFileDownload/libFileDownload.modulemap";
-				PRODUCT_MODULE_NAME = libFileDownload;
-				PRODUCT_NAME = libFileDownload;
+				MODULEMAP_FILE = "Target Support Files/LWFileDownload/LWFileDownload.modulemap";
+				PRODUCT_MODULE_NAME = LWFileDownload;
+				PRODUCT_NAME = LWFileDownload;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		DD4C72AB65EBD1E5D6208B0147426C6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6E0DA75C6524FCDB188F89FAB99417F /* Pods-LWFileDownload_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LWFileDownload_Example/Pods-LWFileDownload_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LWFileDownload_Example/Pods-LWFileDownload_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06210F54F3813D930809F39736F19EA9 /* Build configuration list for PBXNativeTarget "Pods-libFileDownload_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64E7F689DBC8189F4C335BC829DAB12C /* Debug */,
-				173BDC4C95CC33F13BBC38B8534E8CA2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2BFACB0BD83ABB2432F961C173DAE2F9 /* Build configuration list for PBXNativeTarget "libFileDownload" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4223E36336A4A43CC53F679EC0A5DB2 /* Debug */,
-				B51DA4FE1CFE76F85531B09CD4A7900D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B64E2C722A3EAD054D380F489370F012 /* Debug */,
-				5EA5006381E12BC9AA7DEEBC8BCE4905 /* Release */,
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4AF23D952C0C8C498217D777FB8D24 /* Build configuration list for PBXNativeTarget "LWFileDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60CF4CA34DDF08AF8BEF4018B9BB1332 /* Debug */,
+				D08C938B6A8F6A451BE51F24684E74CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D569EEC9E64ADEA5E4C246790C006F2E /* Build configuration list for PBXNativeTarget "Pods-LWFileDownload_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E45A56D8C011E6CAE6DF4FE3AE2D9A /* Debug */,
+				DD4C72AB65EBD1E5D6208B0147426C6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
