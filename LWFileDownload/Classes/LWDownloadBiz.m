@@ -4,6 +4,7 @@
 
 #import "LWDownloadBiz.h"
 #import "LWFileDownloadManager.h"
+#import "ZipArchive.h"
 
 
 @implementation LWDownloadBiz {
@@ -35,21 +36,37 @@
     return filePath;
 }
 
-- (NSString *)dbPathWithZipFileName:(NSString *)dbFileName dbURLString:(NSString *)dbURLString {
+- (NSString *)bundlePathWithBundleFileName:(NSString *)bundleFileName bundleURLString:(NSString *)dbURLString {
     //下载zip文件
-    NSString *filePath = [LWFileDownloadManager filePathWithFileName:dbFileName];
-    NSString *zipFileName = [dbFileName stringByAppendingString:@".zip"];
-    BOOL success=[self downloadDBFileWithDBFileName:zipFileName dbURLString:dbURLString completeBlock:^{
-        //todo:解压zip文件
-        LWFileDownloadManager *manager = [LWFileDownloadManager shareManager];
-        NSString *zipPath = [manager.fileDirectoryPath stringByAppendingPathComponent:zipFileName];
-        NSString *unzipPath = [manager.fileDirectoryPath stringByAppendingPathComponent:dbFileName];
-        [SSZipArchive unzipFileAtPath:zipPath toDestination:unzipPath];
+    NSString *zipName=[bundleFileName stringByAppendingString:@".zip"];
+
+    //下载
+    NSString *unZipPath=[LWFileDownloadManager shareManager].fileDirectoryPath;
+    NSString *zipPath = [unZipPath stringByAppendingPathComponent:zipName];
+    __block BOOL exsitZip = [[NSFileManager defaultManager] fileExistsAtPath:zipPath];
+    exsitZip=[self downloadDBFileWithDBFileName:zipName dbURLString:dbURLString completeBlock:^{
+
+        //解压
+        exsitZip = [[NSFileManager defaultManager] fileExistsAtPath:zipPath];
+        if(exsitZip && ![LWFileDownloadManager exsitFileWithFileName:bundleFileName] ){ //不存在就解压
+            [SSZipArchive unzipFileAtPath:zipPath toDestination:unZipPath];  //解压zip文件
+        }
     }];
-    if(!success){
-        filePath = [[[NSBundle bundleForClass:self.class] resourcePath] stringByAppendingPathComponent:dbFileName];
+
+    NSString *bundlePath = [unZipPath stringByAppendingPathComponent:bundleFileName];
+
+    //是否存在解压后的文件
+    BOOL exsitBundle= [LWFileDownloadManager exsitFileWithFileName:bundleFileName];
+    if (exsitZip && !exsitBundle) {
+        [SSZipArchive unzipFileAtPath:zipPath toDestination:unZipPath];
     }
-    return filePath;
+
+    //如果沙盒里没有，就从bundle中去找
+    exsitBundle= [LWFileDownloadManager exsitFileWithFileName:bundleFileName];
+    if(!exsitBundle){
+        bundlePath = [[[NSBundle bundleForClass:self.class] resourcePath] stringByAppendingPathComponent:bundleFileName];
+    }
+    return bundlePath;
 }
 
 
@@ -65,20 +82,20 @@
         /*task = */[LWFileDownloadManager downloadFileWithFileName:dbFileName
                                                          URLString:dbURLString
                                                 requestHandleBlock:^NSMutableURLRequest *(NSMutableURLRequest *request) {
-                                                    LWDLLog(@"=====开始下载");
+                                                    LWDLLog(@"=====%@开始下载",dbFileName);
 //                                                    [LWMaskProgressView showMaskProgressViewin:vc.view withText:NSLocalizedString(@"Cancel", nil) progress:0 dismissBlock:^{
 //                                                        [task.curretnDataTask cancel];
 //                                                    }];
                                                     return request;
                                                 }
                                                updateProgressBlock:^(float progress) {
-                                                   LWDLLog(@"======下载：%f", progress);
+                                                   //LWDLLog(@"======%@下载：%f", progress,dbFileName);
 //                                                   [LWMaskProgressView showMaskProgressViewin:vc.view withText:NSLocalizedString(@"Cancel", nil) progress:progress dismissBlock:^{
 //                                                       [task.curretnDataTask cancel];
 //                                                   }];
                                                }
                                                serialCompleteBlock:^{
-                                                   LWDLLog(@"======下载完成");
+                                                   LWDLLog(@"======%@下载完成",dbFileName);
 //                                                   [LWMaskProgressView dismissMaskProgressViewin:vc.view];
                                                     if(completeBlock){
                                                         completeBlock();

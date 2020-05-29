@@ -138,15 +138,13 @@ static LWFileDownloadManager *_instance = nil;
 
 //是否存在fileName
 + (BOOL)exsitFileWithFileName:(NSString *)fileName {
-    LWFileDownloadManager *sef = [LWFileDownloadManager shareManager];
-    NSString *filePath = [sef.fileDirectoryPath stringByAppendingPathComponent:fileName];
+    NSString *filePath = [[LWFileDownloadManager shareManager].fileDirectoryPath stringByAppendingPathComponent:fileName];
     BOOL exsit = [[NSFileManager defaultManager] fileExistsAtPath:filePath];
     return exsit;
 }
 
 +(NSString *)filePathWithFileName:(NSString *)fileName {
-    LWFileDownloadManager *sef = [LWFileDownloadManager shareManager];
-    NSString *filePath = [sef.fileDirectoryPath stringByAppendingPathComponent:fileName];
+    NSString *filePath = [[LWFileDownloadManager shareManager].fileDirectoryPath stringByAppendingPathComponent:fileName];
     return filePath;
 }
 
@@ -264,11 +262,10 @@ static LWFileDownloadManager *_instance = nil;
     LWDLLog(@"--------%d:%s \n", __LINE__, __func__);
     LWDLLog(@"=====completed; error: %@", error);
 
-    LWFileDownloadManager *manager = [LWFileDownloadManager shareManager];
-
-    if (!error) {
+    BOOL exsit = [LWFileDownloadManager exsitFileWithFileName:self.fileName];
+    if (!error && !exsit) {
         //写入文件
-        NSString *filePath = [manager.fileDirectoryPath stringByAppendingPathComponent:self.fileName];
+        NSString *filePath = [[LWFileDownloadManager shareManager].fileDirectoryPath stringByAppendingPathComponent:self.fileName];
         [LWFileDownloadManager writeData:self.dataToDownload toFilePath:filePath];
     }
 

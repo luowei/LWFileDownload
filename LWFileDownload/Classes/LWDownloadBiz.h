@@ -8,7 +8,7 @@
 @interface LWDownloadBiz : NSObject
 + (instancetype)share;
 
-- (NSString *)dbPathWithZipFileName:(NSString *)dbFileName dbURLString:(NSString *)dbURLString;
+- (NSString *)bundlePathWithBundleFileName:(NSString *)bundleFileName bundleURLString:(NSString *)dbURLString;
 - (NSString *)dbPathWithDBFileName:(NSString *)dbFileName dbURLString:(NSString *)dbURLString;
 
 -(BOOL)downloadDBFileWithDBFileName:(NSString *)dbFileName dbURLString:(NSString *)dbURLString;

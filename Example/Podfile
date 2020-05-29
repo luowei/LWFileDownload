@@ -5,6 +5,8 @@ platform :ios, '8.0'
 target 'LWFileDownload_Example' do
   pod 'LWFileDownload', :path => '../'
 
+  pod 'SSZipArchive'
+
   # target 'LWFileDownload_Tests' do
   #   inherit! :search_paths
   # end

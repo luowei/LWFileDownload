@@ -1,23 +1,24 @@
 PODS:
   - LWFileDownload (1.0.0):
-    - ZipArchive
-  - ZipArchive (1.4.0)
+    - SSZipArchive
+  - SSZipArchive (2.2.2)
 
 DEPENDENCIES:
   - LWFileDownload (from `../`)
+  - SSZipArchive
 
 SPEC REPOS:
   trunk:
-    - ZipArchive
+    - SSZipArchive
 
 EXTERNAL SOURCES:
   LWFileDownload:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LWFileDownload: 264ffed829993a291348fdf5c7196b076cd2451a
-  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+  LWFileDownload: 939a9c3e782b7c0c057a640e540ae6949ddf6434
+  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
 
-PODFILE CHECKSUM: 7935a4549bdd82949bf4fd84cc9325c2af99f2b6
+PODFILE CHECKSUM: 339966a30e844820221853b8b063072dd7e6620f
 
 COCOAPODS: 1.9.2
