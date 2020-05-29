@@ -18,6 +18,8 @@
 @property(nonatomic, strong) dispatch_queue_main_t s_queue;
 //@property(nonatomic) BOOL serialDownload;
 
+-(NSString *)fileDirectoryPath;
+
 + (instancetype)shareManager;
 
 + (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString

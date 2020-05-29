@@ -7,102 +7,193 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FBB855AF4E7E145D374541E6708867F /* LWFileDownload-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E661334AB92165D45029F590B9CA19 /* LWFileDownload-dummy.m */; };
-		56B163A50657BEA930E01F847C70C9CA /* LWFileDownload-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D43D7275B00A380B7399FB926A3C0F /* LWFileDownload-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A0602A59385DC9310C362320147D6B5 /* Pods-LWFileDownload_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF996F37812A9D8191EB7350D860396 /* Pods-LWFileDownload_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80FE3B19B072656C630DB8D8CE986B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		90D0827FAAE5E220586DDE3C0695B9A6 /* LWFileDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D94BF6BF1CFBE82E827CC37ADC0ABDF5 /* LWFileDownloadManager.m */; };
-		9990DB7628A0611DAFC79DC01F169F89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9D759E752CE6717D1FCD43106B15BC1A /* Pods-LWFileDownload_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D970C72250AD68D8A5E3D3F576F04076 /* Pods-LWFileDownload_Example-dummy.m */; };
-		AF0C09B96777BDA7F2B009BAC42DA94F /* LWFileDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5028751E556FA02F88E8801E41AC195F /* LWFileDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		008FA02AB24F92843AE0C6255D569DFC /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B647EEE01559C5E11AABC8731685F8 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		226CB89AEA036946A5471E9182D0A687 /* LWDownloadBiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCAB17C30A7D438801E8AFA5018AD00 /* LWDownloadBiz.m */; };
+		2773A8922243E32839CFDEDA2CCA2740 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1013ADE31109BD7330E410FC32956F27 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A3B03F3F8870C7B77B4755FE77A3DAB /* LWFileDownloadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A0374F4925AB4CA593E121BF3F8817 /* LWFileDownloadManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AFE39A6D38E4AE3ED98FC52595F1F9A /* ZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AFDE73DFC499E7A4444D9B5AE3C52F2 /* ZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35F26409CDDC505BBFB3FD76EDB291D0 /* Pods-LWFileDownload_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF996F37812A9D8191EB7350D860396 /* Pods-LWFileDownload_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BCA567E23BB53BDB54392D0C21EA179 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD372E2FDDD82DBB75FA266A9240202 /* Foundation.framework */; };
+		4C253985C70B565405EAAB8F4328386F /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D109FF255D29EDBB4B7795E817AF38D /* mztools.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		4CF4DDB25CEBE3D06E879252A4A592DC /* ZipArchive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135BA383711AE8F89758DA08AE456F0B /* ZipArchive.framework */; };
+		5CB251F01C46F90DA964F45A77A537FB /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 87D8A6480DBF2D09768EDD1B66283106 /* zip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		5D69B248460D5B0B33976CB23A8F62D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD372E2FDDD82DBB75FA266A9240202 /* Foundation.framework */; };
+		5E5762FEE0F7F001651BD4F59EF93016 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 064CB8D4E1EF9EBFEE3FDAD4DCEEE8ED /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7AF9E0625B899DA103D2D2888640DFA0 /* ZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F34695FB2C5CCE3BF1762DC656DAE343 /* ZipArchive-dummy.m */; };
+		83216B342D32300D0BDD696B25F9DE5B /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = ACDE35A2A21E5EE3870B5BA74487920D /* unzip.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		ACAFD06CFFC181941ECAE1CD5832C1C4 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D65795E2815D75404CB270A1B1A5581 /* ioapi.c */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		B134040094705DC091D3FC8F1FAE67E4 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = D5DB5414AD10E6EB48EE28FC0FA38068 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B2421E60B6B7414541E29E436B04F814 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD372E2FDDD82DBB75FA266A9240202 /* Foundation.framework */; };
+		B9E4A1BEBF45B9D8C02C27103945A21A /* LWFileDownload-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9859A1AFFE43651D2E0CB4F3784B51 /* LWFileDownload-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6F625BAB622B73325FBEBE0739F5C00 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 031227A120DCBA9F60D88016BE3CDAF9 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CBB727ADBE1908B4C63F72DBEFE44130 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EC797F9851EECB840376E7E3EB08A9D /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DA824A7ABAD30389E5B7E871EB0A0971 /* LWDownloadBiz.h in Headers */ = {isa = PBXBuildFile; fileRef = F77F707B764ACCE75302ACE23956D6A9 /* LWDownloadBiz.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB3E3D9EB3774B70E6489D3496AA652D /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB388034D607CD0ADDDD1C62A104EB9 /* ZipArchive.m */; settings = {COMPILER_FLAGS = "-Dunix -fno-objc-arc"; }; };
+		E101E0CCB0BA3945B5D8775FA029E9C6 /* LWFileDownload-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1325A9162C3FED3F3D1E40F3F03C7C46 /* LWFileDownload-dummy.m */; };
+		F10568FDE27327667616B3C79E13717A /* Pods-LWFileDownload_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D970C72250AD68D8A5E3D3F576F04076 /* Pods-LWFileDownload_Example-dummy.m */; };
+		F1667D865F74A51E93DC4F0CC5A94E87 /* LWFileDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D43C26D2A8F160362C9B000867A8450 /* LWFileDownloadManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7F7881D7495D9B2E3E8DBFA287E8DB45 /* PBXContainerItemProxy */ = {
+		07DD3F65FBE75D9180366BB4A0A5A21C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8CD9981B74F4E8AD66DAB5AC70756D5C;
 			remoteInfo = LWFileDownload;
 		};
+		28020B4CFEF17D3210C0D041BA08D94A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EBBCD2ED91CBB7653A936580705F26D;
+			remoteInfo = ZipArchive;
+		};
+		95AB416C1A73C6359ED64B1B28912061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EBBCD2ED91CBB7653A936580705F26D;
+			remoteInfo = ZipArchive;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011F0DE56F8F1CCC0A44835917508B37 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		0179E27BC6624C1EDAB8281DACDE560A /* Pods-LWFileDownload_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LWFileDownload_Example-Info.plist"; sourceTree = "<group>"; };
-		093CE317371DD7EAAA4BB594E98673CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		15E9A6219EDB3CFF7F98A0882BCB65EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		20E16BC3D457853E6353EBCBD10D5033 /* LWFileDownload-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LWFileDownload-prefix.pch"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		38E661334AB92165D45029F590B9CA19 /* LWFileDownload-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LWFileDownload-dummy.m"; sourceTree = "<group>"; };
+		031227A120DCBA9F60D88016BE3CDAF9 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = minizip/zip.h; sourceTree = "<group>"; };
+		064CB8D4E1EF9EBFEE3FDAD4DCEEE8ED /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = minizip/crypt.h; sourceTree = "<group>"; };
+		0FD372E2FDDD82DBB75FA266A9240202 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1013ADE31109BD7330E410FC32956F27 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		1325A9162C3FED3F3D1E40F3F03C7C46 /* LWFileDownload-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LWFileDownload-dummy.m"; sourceTree = "<group>"; };
+		135BA383711AE8F89758DA08AE456F0B /* ZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B647EEE01559C5E11AABC8731685F8 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = minizip/unzip.h; sourceTree = "<group>"; };
+		18E74121B5CC8BA194147AEC0A7BB0A8 /* ZipArchive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipArchive.debug.xcconfig; sourceTree = "<group>"; };
+		21422A6650E1C4EA04C28FAB38995AF2 /* LWFileDownload.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LWFileDownload.modulemap; sourceTree = "<group>"; };
+		263E33AFF4A991794A9E83B12DD1B26D /* LWFileDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LWFileDownload.release.xcconfig; sourceTree = "<group>"; };
 		3967D79980AE0881B4D4367928E15251 /* Pods-LWFileDownload_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LWFileDownload_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4639415C68078ACAC8F4B374ED9A46C9 /* LWFileDownload.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LWFileDownload.modulemap; sourceTree = "<group>"; };
+		3EC797F9851EECB840376E7E3EB08A9D /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = minizip/ioapi.h; sourceTree = "<group>"; };
+		4AFDE73DFC499E7A4444D9B5AE3C52F2 /* ZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		4CB388034D607CD0ADDDD1C62A104EB9 /* ZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
 		4D8521EF13BDA1DCDABABE8D8A61B890 /* Pods-LWFileDownload_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LWFileDownload_Example-frameworks.sh"; sourceTree = "<group>"; };
-		5028751E556FA02F88E8801E41AC195F /* LWFileDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LWFileDownloadManager.h; path = LWFileDownload/Classes/LWFileDownloadManager.h; sourceTree = "<group>"; };
-		557CB26D8EECF1A22D1075B5B5020087 /* LWFileDownload.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LWFileDownload.xcconfig; sourceTree = "<group>"; };
-		5DC5570CE4ABE72C2B38EDD8BEF8E192 /* LWFileDownload-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LWFileDownload-Info.plist"; sourceTree = "<group>"; };
+		5D109FF255D29EDBB4B7795E817AF38D /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = minizip/mztools.c; sourceTree = "<group>"; };
+		5F8EC5B54C173B847D8CD217CD74952A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		65CCFBAF001818B0B4C19E049C53B198 /* Pods-LWFileDownload_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWFileDownload_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		695433AD6CE29316C2F0FD70BFB680C4 /* LWFileDownload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LWFileDownload.debug.xcconfig; sourceTree = "<group>"; };
+		6DA12373153865592169EE9C6AD4210A /* ZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZipArchive-prefix.pch"; sourceTree = "<group>"; };
 		7767C7742BE858322A6013AB1F1BB476 /* Pods-LWFileDownload_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LWFileDownload_Example.modulemap"; sourceTree = "<group>"; };
+		7D241183EDFCD0F80A56D07F5A5DD7BE /* ZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZipArchive.modulemap; sourceTree = "<group>"; };
+		87D8A6480DBF2D09768EDD1B66283106 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = minizip/zip.c; sourceTree = "<group>"; };
+		8CAA7AD0AA782AD18BFEFB3BEE1E1AF6 /* LWFileDownload.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LWFileDownload.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8CCAB17C30A7D438801E8AFA5018AD00 /* LWDownloadBiz.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LWDownloadBiz.m; path = LWFileDownload/Classes/LWDownloadBiz.m; sourceTree = "<group>"; };
+		8D43C26D2A8F160362C9B000867A8450 /* LWFileDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LWFileDownloadManager.m; path = LWFileDownload/Classes/LWFileDownloadManager.m; sourceTree = "<group>"; };
+		8D65795E2815D75404CB270A1B1A5581 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = minizip/ioapi.c; sourceTree = "<group>"; };
+		96D49CD6F86CC1FE3A21EB4B2FB579BF /* LWFileDownload-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LWFileDownload-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3682D1478367B0EB6F2827516F3092C /* ZipArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZipArchive.release.xcconfig; sourceTree = "<group>"; };
 		A9FA1E4497B19ADE48410B2A854198CE /* Pods_LWFileDownload_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LWFileDownload_Example.framework; path = "Pods-LWFileDownload_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C690EF4B91E96205D9736F1C55D7CA4B /* LWFileDownload.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LWFileDownload.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ACDE35A2A21E5EE3870B5BA74487920D /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = minizip/unzip.c; sourceTree = "<group>"; };
+		D01FE8B1403806A415EA448CC8B2DE5B /* ZipArchive-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZipArchive-Info.plist"; sourceTree = "<group>"; };
 		D4FA4E25C8EDDA5FCECF7F9B32DFFF7E /* Pods-LWFileDownload_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LWFileDownload_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D6D43D7275B00A380B7399FB926A3C0F /* LWFileDownload-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LWFileDownload-umbrella.h"; sourceTree = "<group>"; };
+		D5DB5414AD10E6EB48EE28FC0FA38068 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = minizip/mztools.h; sourceTree = "<group>"; };
 		D6E0DA75C6524FCDB188F89FAB99417F /* Pods-LWFileDownload_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWFileDownload_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D94BF6BF1CFBE82E827CC37ADC0ABDF5 /* LWFileDownloadManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LWFileDownloadManager.m; path = LWFileDownload/Classes/LWFileDownloadManager.m; sourceTree = "<group>"; };
 		D970C72250AD68D8A5E3D3F576F04076 /* Pods-LWFileDownload_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LWFileDownload_Example-dummy.m"; sourceTree = "<group>"; };
+		DA9859A1AFFE43651D2E0CB4F3784B51 /* LWFileDownload-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LWFileDownload-umbrella.h"; sourceTree = "<group>"; };
+		DAFC4FBA3B95C5E9D5CBFC260AA08804 /* ZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZipArchive.framework; path = ZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF996F37812A9D8191EB7350D860396 /* Pods-LWFileDownload_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LWFileDownload_Example-umbrella.h"; sourceTree = "<group>"; };
+		F34695FB2C5CCE3BF1762DC656DAE343 /* ZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZipArchive-dummy.m"; sourceTree = "<group>"; };
+		F4A0374F4925AB4CA593E121BF3F8817 /* LWFileDownloadManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LWFileDownloadManager.h; path = LWFileDownload/Classes/LWFileDownloadManager.h; sourceTree = "<group>"; };
+		F77F707B764ACCE75302ACE23956D6A9 /* LWDownloadBiz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LWDownloadBiz.h; path = LWFileDownload/Classes/LWDownloadBiz.h; sourceTree = "<group>"; };
 		F78F44828F18D2CF0E25FA30F4D8872C /* LWFileDownload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LWFileDownload.framework; path = LWFileDownload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9FEC1BAC0CAB9CA55D455303DDCA678 /* LWFileDownload-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LWFileDownload-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		940A2709194E41E26947C6F7BE614093 /* Frameworks */ = {
+		1A2D0C6B482F28F95D90BE5556E3CB35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9990DB7628A0611DAFC79DC01F169F89 /* Foundation.framework in Frameworks */,
+				3BCA567E23BB53BDB54392D0C21EA179 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E32E02097A9B6302545A92D1134A5CFA /* Frameworks */ = {
+		5F68D6565320260E81CEEFB15A2CC164 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80FE3B19B072656C630DB8D8CE986B3B /* Foundation.framework in Frameworks */,
+				5D69B248460D5B0B33976CB23A8F62D0 /* Foundation.framework in Frameworks */,
+				4CF4DDB25CEBE3D06E879252A4A592DC /* ZipArchive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9A70A47E81062FB79B567672CA7BB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2421E60B6B7414541E29E436B04F814 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03F68C4AFA12B445AC6B8F4024B0261C /* LWFileDownload */ = {
+		1EC536A6A2C3DEDEC5D55C6B6C89D16F /* ZipArchive */ = {
 			isa = PBXGroup;
 			children = (
-				5028751E556FA02F88E8801E41AC195F /* LWFileDownloadManager.h */,
-				D94BF6BF1CFBE82E827CC37ADC0ABDF5 /* LWFileDownloadManager.m */,
-				24F911BFB22679D117DA032871127B9D /* Pod */,
-				5B8031C210E1284476E2BA72A6795F82 /* Support Files */,
+				064CB8D4E1EF9EBFEE3FDAD4DCEEE8ED /* crypt.h */,
+				8D65795E2815D75404CB270A1B1A5581 /* ioapi.c */,
+				3EC797F9851EECB840376E7E3EB08A9D /* ioapi.h */,
+				5D109FF255D29EDBB4B7795E817AF38D /* mztools.c */,
+				D5DB5414AD10E6EB48EE28FC0FA38068 /* mztools.h */,
+				ACDE35A2A21E5EE3870B5BA74487920D /* unzip.c */,
+				13B647EEE01559C5E11AABC8731685F8 /* unzip.h */,
+				87D8A6480DBF2D09768EDD1B66283106 /* zip.c */,
+				031227A120DCBA9F60D88016BE3CDAF9 /* zip.h */,
+				1013ADE31109BD7330E410FC32956F27 /* ZipArchive.h */,
+				4CB388034D607CD0ADDDD1C62A104EB9 /* ZipArchive.m */,
+				E02646A8F49C2B37072634D21E11D2EF /* Support Files */,
 			);
-			name = LWFileDownload;
-			path = ../..;
+			name = ZipArchive;
+			path = ZipArchive;
 			sourceTree = "<group>";
 		};
-		24F911BFB22679D117DA032871127B9D /* Pod */ = {
+		1FB70C4183964128E8D2F6ACDA33D8CA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				15E9A6219EDB3CFF7F98A0882BCB65EE /* LICENSE */,
-				C690EF4B91E96205D9736F1C55D7CA4B /* LWFileDownload.podspec */,
-				093CE317371DD7EAAA4BB594E98673CC /* README.md */,
+				21422A6650E1C4EA04C28FAB38995AF2 /* LWFileDownload.modulemap */,
+				1325A9162C3FED3F3D1E40F3F03C7C46 /* LWFileDownload-dummy.m */,
+				96D49CD6F86CC1FE3A21EB4B2FB579BF /* LWFileDownload-Info.plist */,
+				F9FEC1BAC0CAB9CA55D455303DDCA678 /* LWFileDownload-prefix.pch */,
+				DA9859A1AFFE43651D2E0CB4F3784B51 /* LWFileDownload-umbrella.h */,
+				695433AD6CE29316C2F0FD70BFB680C4 /* LWFileDownload.debug.xcconfig */,
+				263E33AFF4A991794A9E83B12DD1B26D /* LWFileDownload.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LWFileDownload";
+			sourceTree = "<group>";
+		};
+		5269EA0E3F89C72F2F3FF7ABBE325BF5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5F8EC5B54C173B847D8CD217CD74952A /* LICENSE */,
+				8CAA7AD0AA782AD18BFEFB3BEE1E1AF6 /* LWFileDownload.podspec */,
+				011F0DE56F8F1CCC0A44835917508B37 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		4D362153242CED36DB8AF5D401C4617D /* Products */ = {
+		554EDDA6DA0513112CD67FA4C9898FC6 /* LWFileDownload */ = {
 			isa = PBXGroup;
 			children = (
-				F78F44828F18D2CF0E25FA30F4D8872C /* LWFileDownload.framework */,
-				A9FA1E4497B19ADE48410B2A854198CE /* Pods_LWFileDownload_Example.framework */,
+				F77F707B764ACCE75302ACE23956D6A9 /* LWDownloadBiz.h */,
+				8CCAB17C30A7D438801E8AFA5018AD00 /* LWDownloadBiz.m */,
+				F4A0374F4925AB4CA593E121BF3F8817 /* LWFileDownloadManager.h */,
+				8D43C26D2A8F160362C9B000867A8450 /* LWFileDownloadManager.m */,
+				5269EA0E3F89C72F2F3FF7ABBE325BF5 /* Pod */,
+				1FB70C4183964128E8D2F6ACDA33D8CA /* Support Files */,
 			);
-			name = Products;
+			name = LWFileDownload;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		565DE9C4D2DCF90CF3D29291CB23958A /* Pods-LWFileDownload_Example */ = {
@@ -122,53 +213,74 @@
 			path = "Target Support Files/Pods-LWFileDownload_Example";
 			sourceTree = "<group>";
 		};
-		5B8031C210E1284476E2BA72A6795F82 /* Support Files */ = {
+		824450391C4925C292F035F8A41F7820 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4639415C68078ACAC8F4B374ED9A46C9 /* LWFileDownload.modulemap */,
-				557CB26D8EECF1A22D1075B5B5020087 /* LWFileDownload.xcconfig */,
-				38E661334AB92165D45029F590B9CA19 /* LWFileDownload-dummy.m */,
-				5DC5570CE4ABE72C2B38EDD8BEF8E192 /* LWFileDownload-Info.plist */,
-				20E16BC3D457853E6353EBCBD10D5033 /* LWFileDownload-prefix.pch */,
-				D6D43D7275B00A380B7399FB926A3C0F /* LWFileDownload-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LWFileDownload";
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				0FD372E2FDDD82DBB75FA266A9240202 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		8670AB8F7F23068A3D9BB24B21B388C1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				554EDDA6DA0513112CD67FA4C9898FC6 /* LWFileDownload */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D3BE1A332802A86DA2096E7043EA8B15 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				4D362153242CED36DB8AF5D401C4617D /* Products */,
+				8670AB8F7F23068A3D9BB24B21B388C1 /* Development Pods */,
+				DDC55AF1BE6053B24F9E526D8A2031F2 /* Frameworks */,
+				F2FBAB7F0731C6DFCF9698BE6E92ECFD /* Pods */,
+				F44BFDFB2E443498BF0C7A49EE266C71 /* Products */,
 				F694971BA0A5A5ECD792671611CADA3C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DDC55AF1BE6053B24F9E526D8A2031F2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				135BA383711AE8F89758DA08AE456F0B /* ZipArchive.framework */,
+				824450391C4925C292F035F8A41F7820 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D3BE1A332802A86DA2096E7043EA8B15 /* Development Pods */ = {
+		E02646A8F49C2B37072634D21E11D2EF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				03F68C4AFA12B445AC6B8F4024B0261C /* LWFileDownload */,
+				7D241183EDFCD0F80A56D07F5A5DD7BE /* ZipArchive.modulemap */,
+				F34695FB2C5CCE3BF1762DC656DAE343 /* ZipArchive-dummy.m */,
+				D01FE8B1403806A415EA448CC8B2DE5B /* ZipArchive-Info.plist */,
+				6DA12373153865592169EE9C6AD4210A /* ZipArchive-prefix.pch */,
+				4AFDE73DFC499E7A4444D9B5AE3C52F2 /* ZipArchive-umbrella.h */,
+				18E74121B5CC8BA194147AEC0A7BB0A8 /* ZipArchive.debug.xcconfig */,
+				A3682D1478367B0EB6F2827516F3092C /* ZipArchive.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "../Target Support Files/ZipArchive";
+			sourceTree = "<group>";
+		};
+		F2FBAB7F0731C6DFCF9698BE6E92ECFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EC536A6A2C3DEDEC5D55C6B6C89D16F /* ZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F44BFDFB2E443498BF0C7A49EE266C71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F78F44828F18D2CF0E25FA30F4D8872C /* LWFileDownload.framework */,
+				A9FA1E4497B19ADE48410B2A854198CE /* Pods_LWFileDownload_Example.framework */,
+				DAFC4FBA3B95C5E9D5CBFC260AA08804 /* ZipArchive.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F694971BA0A5A5ECD792671611CADA3C /* Targets Support Files */ = {
@@ -182,20 +294,35 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2957A7C83BB50D74C47BA58B2007358D /* Headers */ = {
+		3C7EA100B4D3EE25CEF385216B950CA5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A0602A59385DC9310C362320147D6B5 /* Pods-LWFileDownload_Example-umbrella.h in Headers */,
+				35F26409CDDC505BBFB3FD76EDB291D0 /* Pods-LWFileDownload_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82396349E2BE16E58138F090BE59A30E /* Headers */ = {
+		777F684C0B33084522553D39BA93F725 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56B163A50657BEA930E01F847C70C9CA /* LWFileDownload-umbrella.h in Headers */,
-				AF0C09B96777BDA7F2B009BAC42DA94F /* LWFileDownloadManager.h in Headers */,
+				5E5762FEE0F7F001651BD4F59EF93016 /* crypt.h in Headers */,
+				CBB727ADBE1908B4C63F72DBEFE44130 /* ioapi.h in Headers */,
+				B134040094705DC091D3FC8F1FAE67E4 /* mztools.h in Headers */,
+				008FA02AB24F92843AE0C6255D569DFC /* unzip.h in Headers */,
+				C6F625BAB622B73325FBEBE0739F5C00 /* zip.h in Headers */,
+				2AFE39A6D38E4AE3ED98FC52595F1F9A /* ZipArchive-umbrella.h in Headers */,
+				2773A8922243E32839CFDEDA2CCA2740 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6CF8320DBFE6D2770C7BCF0D65CA651 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA824A7ABAD30389E5B7E871EB0A0971 /* LWDownloadBiz.h in Headers */,
+				B9E4A1BEBF45B9D8C02C27103945A21A /* LWFileDownload-umbrella.h in Headers */,
+				2A3B03F3F8870C7B77B4755FE77A3DAB /* LWFileDownloadManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,35 +331,55 @@
 /* Begin PBXNativeTarget section */
 		8CD9981B74F4E8AD66DAB5AC70756D5C /* LWFileDownload */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BB4AF23D952C0C8C498217D777FB8D24 /* Build configuration list for PBXNativeTarget "LWFileDownload" */;
+			buildConfigurationList = B11F99F542FECCFD89B968E44D4B8F3E /* Build configuration list for PBXNativeTarget "LWFileDownload" */;
 			buildPhases = (
-				82396349E2BE16E58138F090BE59A30E /* Headers */,
-				068EC7E5E20F37E8A6BE0285AE281DF7 /* Sources */,
-				940A2709194E41E26947C6F7BE614093 /* Frameworks */,
-				83BB491E6FBECAF03BC2F169B9AC73AC /* Resources */,
+				B6CF8320DBFE6D2770C7BCF0D65CA651 /* Headers */,
+				2834ADDB12052425D09477B1EAABFD46 /* Sources */,
+				5F68D6565320260E81CEEFB15A2CC164 /* Frameworks */,
+				B94D9540B31C75F31A6FF3F126F88128 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FE49483E2801265771C1AFE996E5554D /* PBXTargetDependency */,
 			);
 			name = LWFileDownload;
 			productName = LWFileDownload;
 			productReference = F78F44828F18D2CF0E25FA30F4D8872C /* LWFileDownload.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A6C69ECA2C6F19FE125C630B5BD8AA96 /* Pods-LWFileDownload_Example */ = {
+		8EBBCD2ED91CBB7653A936580705F26D /* ZipArchive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D569EEC9E64ADEA5E4C246790C006F2E /* Build configuration list for PBXNativeTarget "Pods-LWFileDownload_Example" */;
+			buildConfigurationList = 51F615D937EB7C1E79D780105D71F96E /* Build configuration list for PBXNativeTarget "ZipArchive" */;
 			buildPhases = (
-				2957A7C83BB50D74C47BA58B2007358D /* Headers */,
-				1BECA4B2CF4B68E0F47D8FA86C587878 /* Sources */,
-				E32E02097A9B6302545A92D1134A5CFA /* Frameworks */,
-				F2D677E58152AA5891E5C2CDA8196618 /* Resources */,
+				777F684C0B33084522553D39BA93F725 /* Headers */,
+				531D92C9800FB889E3C195FC41ECAAB8 /* Sources */,
+				1A2D0C6B482F28F95D90BE5556E3CB35 /* Frameworks */,
+				3403AB68339E9F48037073DD4070C3CA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				146B463E9F7AC4F3FDF1B36305E4DC1E /* PBXTargetDependency */,
+			);
+			name = ZipArchive;
+			productName = ZipArchive;
+			productReference = DAFC4FBA3B95C5E9D5CBFC260AA08804 /* ZipArchive.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A6C69ECA2C6F19FE125C630B5BD8AA96 /* Pods-LWFileDownload_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53682DA3105E4AB76F8465DA1A88C486 /* Build configuration list for PBXNativeTarget "Pods-LWFileDownload_Example" */;
+			buildPhases = (
+				3C7EA100B4D3EE25CEF385216B950CA5 /* Headers */,
+				8F6CE5DB3CB538DAC773D7861010D88C /* Sources */,
+				C9A70A47E81062FB79B567672CA7BB4A /* Frameworks */,
+				D6572A0A2AF454AD05F9DCD87D401A42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79EF280080FFB1435B86B55C9C43EAA5 /* PBXTargetDependency */,
+				62631F18E4A3D0B76894FDE878543ACD /* PBXTargetDependency */,
 			);
 			name = "Pods-LWFileDownload_Example";
 			productName = "Pods-LWFileDownload_Example";
@@ -257,25 +404,33 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 4D362153242CED36DB8AF5D401C4617D /* Products */;
+			productRefGroup = F44BFDFB2E443498BF0C7A49EE266C71 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8CD9981B74F4E8AD66DAB5AC70756D5C /* LWFileDownload */,
 				A6C69ECA2C6F19FE125C630B5BD8AA96 /* Pods-LWFileDownload_Example */,
+				8EBBCD2ED91CBB7653A936580705F26D /* ZipArchive */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		83BB491E6FBECAF03BC2F169B9AC73AC /* Resources */ = {
+		3403AB68339E9F48037073DD4070C3CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F2D677E58152AA5891E5C2CDA8196618 /* Resources */ = {
+		B94D9540B31C75F31A6FF3F126F88128 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6572A0A2AF454AD05F9DCD87D401A42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -285,35 +440,185 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		068EC7E5E20F37E8A6BE0285AE281DF7 /* Sources */ = {
+		2834ADDB12052425D09477B1EAABFD46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FBB855AF4E7E145D374541E6708867F /* LWFileDownload-dummy.m in Sources */,
-				90D0827FAAE5E220586DDE3C0695B9A6 /* LWFileDownloadManager.m in Sources */,
+				226CB89AEA036946A5471E9182D0A687 /* LWDownloadBiz.m in Sources */,
+				E101E0CCB0BA3945B5D8775FA029E9C6 /* LWFileDownload-dummy.m in Sources */,
+				F1667D865F74A51E93DC4F0CC5A94E87 /* LWFileDownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1BECA4B2CF4B68E0F47D8FA86C587878 /* Sources */ = {
+		531D92C9800FB889E3C195FC41ECAAB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D759E752CE6717D1FCD43106B15BC1A /* Pods-LWFileDownload_Example-dummy.m in Sources */,
+				ACAFD06CFFC181941ECAE1CD5832C1C4 /* ioapi.c in Sources */,
+				4C253985C70B565405EAAB8F4328386F /* mztools.c in Sources */,
+				83216B342D32300D0BDD696B25F9DE5B /* unzip.c in Sources */,
+				5CB251F01C46F90DA964F45A77A537FB /* zip.c in Sources */,
+				7AF9E0625B899DA103D2D2888640DFA0 /* ZipArchive-dummy.m in Sources */,
+				DB3E3D9EB3774B70E6489D3496AA652D /* ZipArchive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F6CE5DB3CB538DAC773D7861010D88C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10568FDE27327667616B3C79E13717A /* Pods-LWFileDownload_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		146B463E9F7AC4F3FDF1B36305E4DC1E /* PBXTargetDependency */ = {
+		62631F18E4A3D0B76894FDE878543ACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZipArchive;
+			target = 8EBBCD2ED91CBB7653A936580705F26D /* ZipArchive */;
+			targetProxy = 28020B4CFEF17D3210C0D041BA08D94A /* PBXContainerItemProxy */;
+		};
+		79EF280080FFB1435B86B55C9C43EAA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LWFileDownload;
 			target = 8CD9981B74F4E8AD66DAB5AC70756D5C /* LWFileDownload */;
-			targetProxy = 7F7881D7495D9B2E3E8DBFA287E8DB45 /* PBXContainerItemProxy */;
+			targetProxy = 07DD3F65FBE75D9180366BB4A0A5A21C /* PBXContainerItemProxy */;
+		};
+		FE49483E2801265771C1AFE996E5554D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZipArchive;
+			target = 8EBBCD2ED91CBB7653A936580705F26D /* ZipArchive */;
+			targetProxy = 95AB416C1A73C6359ED64B1B28912061 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		08282E4DDC533E3D375D3C2CE1AE7323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18E74121B5CC8BA194147AEC0A7BB0A8 /* ZipArchive.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZipArchive/ZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZipArchive/ZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = ZipArchive;
+				PRODUCT_NAME = ZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1189BA556A77018CB711C1979548AFFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3682D1478367B0EB6F2827516F3092C /* ZipArchive.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZipArchive/ZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZipArchive/ZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZipArchive/ZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = ZipArchive;
+				PRODUCT_NAME = ZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A787BBA48B54BCBC51AA694E2B2CF0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 695433AD6CE29316C2F0FD70BFB680C4 /* LWFileDownload.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LWFileDownload/LWFileDownload-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LWFileDownload/LWFileDownload-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LWFileDownload/LWFileDownload.modulemap";
+				PRODUCT_MODULE_NAME = LWFileDownload;
+				PRODUCT_NAME = LWFileDownload;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45F49CE755F9F05E15320211052DB7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65CCFBAF001818B0B4C19E049C53B198 /* Pods-LWFileDownload_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LWFileDownload_Example/Pods-LWFileDownload_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LWFileDownload_Example/Pods-LWFileDownload_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -373,36 +678,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		60CF4CA34DDF08AF8BEF4018B9BB1332 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 557CB26D8EECF1A22D1075B5B5020087 /* LWFileDownload.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LWFileDownload/LWFileDownload-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LWFileDownload/LWFileDownload-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LWFileDownload/LWFileDownload.modulemap";
-				PRODUCT_MODULE_NAME = LWFileDownload;
-				PRODUCT_NAME = LWFileDownload;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -468,42 +743,9 @@
 			};
 			name = Debug;
 		};
-		89E45A56D8C011E6CAE6DF4FE3AE2D9A /* Debug */ = {
+		8D16A273401E01486DCEB44823601AE0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65CCFBAF001818B0B4C19E049C53B198 /* Pods-LWFileDownload_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LWFileDownload_Example/Pods-LWFileDownload_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LWFileDownload_Example/Pods-LWFileDownload_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D08C938B6A8F6A451BE51F24684E74CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 557CB26D8EECF1A22D1075B5B5020087 /* LWFileDownload.xcconfig */;
+			baseConfigurationReference = 263E33AFF4A991794A9E83B12DD1B26D /* LWFileDownload.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -532,7 +774,7 @@
 			};
 			name = Release;
 		};
-		DD4C72AB65EBD1E5D6208B0147426C6D /* Release */ = {
+		D973458CB6587E9976B2E06A2595440F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D6E0DA75C6524FCDB188F89FAB99417F /* Pods-LWFileDownload_Example.release.xcconfig */;
 			buildSettings = {
@@ -578,20 +820,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BB4AF23D952C0C8C498217D777FB8D24 /* Build configuration list for PBXNativeTarget "LWFileDownload" */ = {
+		51F615D937EB7C1E79D780105D71F96E /* Build configuration list for PBXNativeTarget "ZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				60CF4CA34DDF08AF8BEF4018B9BB1332 /* Debug */,
-				D08C938B6A8F6A451BE51F24684E74CD /* Release */,
+				08282E4DDC533E3D375D3C2CE1AE7323 /* Debug */,
+				1189BA556A77018CB711C1979548AFFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D569EEC9E64ADEA5E4C246790C006F2E /* Build configuration list for PBXNativeTarget "Pods-LWFileDownload_Example" */ = {
+		53682DA3105E4AB76F8465DA1A88C486 /* Build configuration list for PBXNativeTarget "Pods-LWFileDownload_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				89E45A56D8C011E6CAE6DF4FE3AE2D9A /* Debug */,
-				DD4C72AB65EBD1E5D6208B0147426C6D /* Release */,
+				45F49CE755F9F05E15320211052DB7FB /* Debug */,
+				D973458CB6587E9976B2E06A2595440F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B11F99F542FECCFD89B968E44D4B8F3E /* Build configuration list for PBXNativeTarget "LWFileDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A787BBA48B54BCBC51AA694E2B2CF0B /* Debug */,
+				8D16A273401E01486DCEB44823601AE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

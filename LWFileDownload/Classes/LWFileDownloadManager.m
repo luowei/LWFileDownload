@@ -8,13 +8,12 @@
 
 @interface LWFileDownloadManager ()
 
-@property(nonatomic, copy) NSString *fileDirectoryPath;
 @property(nonatomic, copy) NSString *diretoryName;
 
 @end
 
 @implementation LWFileDownloadManager {
-
+    NSString *_fileDirectoryPath;
 }
 
 static LWFileDownloadManager *_instance = nil;
@@ -79,7 +78,6 @@ static LWFileDownloadManager *_instance = nil;
 
 
 #pragma mark - Helper Method
-
 - (NSString *)fileDirectoryPath {
 
     NSString *documentsDirectory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
