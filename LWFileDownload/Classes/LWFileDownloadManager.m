@@ -5,7 +5,6 @@
 
 #import "LWFileDownloadManager.h"
 
-
 @interface LWFileDownloadManager ()
 
 @property(nonatomic, copy) NSString *diretoryName;
@@ -26,12 +25,97 @@ static LWFileDownloadManager *_instance = nil;
     return _instance;
 }
 
++(int)alreadyExsitCode{
+    return 300;
+}
+
+-(NSMutableDictionary *)taskMap{
+    if(!_taskMap){
+        _taskMap = @{}.mutableCopy;
+    }
+    return _taskMap;
+}
+
+//根据文件名与下载地址，获得路径
++ (NSString *)filePathWithFileName:(NSString *)fileName downloadURLString:(NSString *)urlString
+              requestBlock:(NSMutableURLRequest *(^)(NSMutableURLRequest *,LWFileDownloadTask *))requestHandleBlock
+             progressBlock:(void (^)(float,LWFileDownloadTask *))updateProgressBlock
+             completeBlock:(void (^)(NSError *,LWFileDownloadTask *))serialCompleteBlock {
+
+    NSString *filePath = [LWFileDownloadManager filePathWithFileName:fileName];
+
+    BOOL exsit = [LWFileDownloadManager downloadFileWithFileName:fileName urlString:urlString requestBlock:requestHandleBlock progressBlock:updateProgressBlock completeBlock:serialCompleteBlock];
+
+    if(!exsit){    //从本地bundle中获取
+        filePath = [[[NSBundle bundleForClass:self.class] resourcePath] stringByAppendingPathComponent:fileName];
+    }
+    return filePath;
+
+}
+
+//判断是存已存在，如果不存在就下载,返回下载后的文件路径
++ (BOOL)downloadFileWithFileName:(NSString *)fileName urlString:(NSString *)urlString
+                          requestBlock:(NSMutableURLRequest *(^)(NSMutableURLRequest *,LWFileDownloadTask *))requestHandleBlock
+                         progressBlock:(void (^)(float,LWFileDownloadTask *))updateProgressBlock
+                         completeBlock:(void (^)(NSError *,LWFileDownloadTask *))serialCompleteBlock{
+
+    BOOL exsit = [LWFileDownloadManager exsitFileWithFileName:fileName];
+    if (!exsit) {
+
+        //更新request
+        NSMutableURLRequest * (^updateRequest)(NSMutableURLRequest *,LWFileDownloadTask *)=^NSMutableURLRequest *(NSMutableURLRequest *request,LWFileDownloadTask *task){
+            NSMutableURLRequest *req = request;
+            if(requestHandleBlock){
+                req = requestHandleBlock(request,task);
+            }
+            return req;
+        };
+
+        void (^progressBlock)(float,LWFileDownloadTask *) =^(float progress,LWFileDownloadTask *task) {
+            if(updateProgressBlock){
+                updateProgressBlock(progress,task);
+            }
+        };
+
+        //完成
+        void (^completeBlock)(NSError *,LWFileDownloadTask *)=^(NSError *error,LWFileDownloadTask *task) {
+            if(serialCompleteBlock){
+                serialCompleteBlock(error,task);
+            }
+        };
+
+        //在这里把tsk存入字典队列
+        LWFileDownloadTask *tsk = [LWFileDownloadManager
+                downloadWithFileName:fileName
+                           urlString:urlString
+                        requestBlock:^NSMutableURLRequest *(NSMutableURLRequest *request) {
+                            request = updateRequest(request, tsk);
+                            return request;
+                        }
+                       progressBlock:^(float progress) {
+                           progressBlock(progress, tsk);
+                       }
+                       completeBlock:^(NSError *error){
+                           completeBlock(error,tsk);
+                           [[LWFileDownloadManager shareManager].taskMap removeObjectForKey:urlString];  //从任务队列删除
+                       }];
+
+        //如果队列中没有任务就加入，并开始
+        if(![LWFileDownloadManager shareManager].taskMap[urlString]){
+            [LWFileDownloadManager shareManager].taskMap[urlString]=tsk;  //加入任务队列
+            [tsk start];
+        }
+
+    }
+
+    return exsit;
+}
 
 //并行下载,串行回调CompleteBlock //DISPATCH_QUEUE_CONCURRENT DISPATCH_QUEUE_SERIAL
-+ (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
-              requestHandleBlock:(NSMutableURLRequest *(^)(NSMutableURLRequest *))requestHandleBlock
-             updateProgressBlock:(void (^)(float))updateProgressBlock
-             serialCompleteBlock:(void (^)())serialCompleteBlock {
++ (LWFileDownloadTask *)downloadWithFileName:(NSString *)fileName urlString:(NSString *)urlString
+                                requestBlock:(NSMutableURLRequest *(^)(NSMutableURLRequest *))requestHandleBlock
+                               progressBlock:(void (^)(float))updateProgressBlock
+                               completeBlock:(void (^)(NSError *))serialCompleteBlock {
 
     //构造manager
     LWFileDownloadManager *manager = [LWFileDownloadManager shareManager];
@@ -43,12 +127,8 @@ static LWFileDownloadManager *_instance = nil;
 //        self.s_queue = dispatch_queue_create("com.koou.com.group.once.queue", DISPATCH_QUEUE_SERIAL);
     }
 
-
-    //新建任务
-    LWFileDownloadTask *task = [LWFileDownloadTask task];
-
-    //并行下载,串行回调更新
-    task.updateRequest = ^NSMutableURLRequest *(NSMutableURLRequest *request){
+    //更新request
+    NSMutableURLRequest * (^updateRequest)(NSMutableURLRequest *)=^NSMutableURLRequest *(NSMutableURLRequest *request){
         NSMutableURLRequest *req = request;
         if(requestHandleBlock){
             req = requestHandleBlock(request);
@@ -56,28 +136,30 @@ static LWFileDownloadManager *_instance = nil;
         return req;
     };
 
-    task.completeBlock = ^{
+    //完成
+    void (^completeBlock)(NSError *)=^(NSError *error){
         //把block放到group中顺序执行
         dispatch_group_async(manager.group, manager.s_queue, ^{
             if(serialCompleteBlock){
-                serialCompleteBlock();
+                serialCompleteBlock(error);
             }
         });
     };
 
-    [task downloadFileWithFileName:fileName URLString:urlString
-               updateProgressBlock:updateProgressBlock
-                     completeBlock:task.completeBlock];
+    //新建任务
+    LWFileDownloadTask *task = [LWFileDownloadTask taskWithURLString:urlString fileName:fileName];
+    task.updateRequest = updateRequest;
+    task.updateProgessBlock = updateProgressBlock;
+    task.completeBlock = completeBlock;
+//    [task start];  //开始下载
 
 //    dispatch_group_notify(manager.group, manager.s_queue, ^{});
-
+    return task;
 }
 
 
-
-
-
 #pragma mark - Helper Method
+
 - (NSString *)fileDirectoryPath {
 
     NSString *documentsDirectory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
@@ -159,23 +241,17 @@ static LWFileDownloadManager *_instance = nil;
 @implementation LWFileDownloadTask
 
 
-+ (instancetype)task {
++ (instancetype)taskWithURLString:(NSString *)urlString fileName:(NSString *)fileName {
     LWFileDownloadTask *task = [[LWFileDownloadTask alloc] init];
+    task.urlString = urlString;
+    task.fileName = fileName;
     return task;
 }
 
 #pragma mark -
 
-
-//下载文件
-- (void)downloadFileWithFileName:(NSString *)fileName URLString:(NSString *)urlString
-             updateProgressBlock:(void (^)(float progress))progressBlock
-                   completeBlock:(void (^)())completeBlock {
-
-//    task.showProgressBlock = showProgressBlock;
-    self.updateProgessBlock = progressBlock;
-    self.completeBlock = completeBlock;
-    [self downloadCustomFileWithfileName:fileName URLString:urlString];
+-(void)start{
+    [self downloadCustomFileWithfileName:self.fileName URLString:self.urlString];
 }
 
 
@@ -190,7 +266,8 @@ static LWFileDownloadManager *_instance = nil;
             self.updateProgessBlock(1.0f);
         }
         if(self.completeBlock){
-            self.completeBlock();
+            NSError *error=[NSError errorWithDomain:@"already exsit or downloaded" code:[LWFileDownloadManager alreadyExsitCode] userInfo:@{@"filename": fileName, @"url": urlString, @"msg": @"已经下载过了"}];
+            self.completeBlock(error);
         }
         return;
     }
@@ -272,7 +349,7 @@ static LWFileDownloadManager *_instance = nil;
     dispatch_async(dispatch_get_main_queue(), ^{
         //更新UI
         if (self.completeBlock) {
-            self.completeBlock();
+            self.completeBlock(error);
         }
     });
 
