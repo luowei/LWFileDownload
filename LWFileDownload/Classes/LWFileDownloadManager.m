@@ -167,9 +167,9 @@ static LWFileDownloadManager *_instance = nil;
 
     [LWFileDownloadManager createDirectoryIfNotExsitPath:_fileDirectoryPath];   //创建目录
 
-    LWDLLog(@"======fileDirectoryPath:%@",_fileDirectoryPath);
-    LWDLLog(@"======App Bundle Path:%@",[[NSBundle mainBundle] bundlePath]);
-    LWDLLog(@"======Home Path:%@",NSHomeDirectory());
+//    LWDLLog(@"======fileDirectoryPath:%@",_fileDirectoryPath);
+//    LWDLLog(@"======App Bundle Path:%@",[[NSBundle mainBundle] bundlePath]);
+//    LWDLLog(@"======Home Path:%@",NSHomeDirectory());
 
     return _fileDirectoryPath;
 }
