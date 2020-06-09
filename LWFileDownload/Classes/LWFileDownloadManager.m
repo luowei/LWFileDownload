@@ -42,8 +42,8 @@ static LWFileDownloadManager *_instance = nil;
              progressBlock:(void (^)(float,LWFileDownloadTask *))updateProgressBlock
              completeBlock:(void (^)(NSError *,LWFileDownloadTask *))serialCompleteBlock {
 
+    //获得沙盒目录，并判断沙盒里有没有，没的就直接下载
     NSString *filePath = [LWFileDownloadManager filePathWithFileName:fileName];
-
     BOOL exsit = [LWFileDownloadManager downloadFileWithFileName:fileName urlString:urlString requestBlock:requestHandleBlock progressBlock:updateProgressBlock completeBlock:serialCompleteBlock];
 
     if(!exsit){    //从本地bundle中获取
@@ -59,6 +59,7 @@ static LWFileDownloadManager *_instance = nil;
                          progressBlock:(void (^)(float,LWFileDownloadTask *))updateProgressBlock
                          completeBlock:(void (^)(NSError *,LWFileDownloadTask *))serialCompleteBlock{
 
+    //先看沙盒里有没有，没有才下载
     BOOL exsit = [LWFileDownloadManager exsitFileWithFileName:fileName];
     if (!exsit) {
 
