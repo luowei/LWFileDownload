@@ -20,6 +20,11 @@ it, simply add the following line to your Podfile:
 pod 'libFileDownload'
 ```
 
+**Carthage**
+```ruby
+github "luowei/libFileDownload"
+```
+
 ## Author
 
 luowei, luowei@wodedata.com
