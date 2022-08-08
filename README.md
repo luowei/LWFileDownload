@@ -9,6 +9,17 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+```Objective-C
+NSString *fileDirectoryPath=[LWFileDownloadManager shareManager].fileDirectoryPath;
+
+BOOL exsitFile = [LWFileDownloadManager exsitFileWithFileName:bundleFileName];
+
+BOOL exsitZip = [LWFileDownloadManager downloadFileWithFileName:zipName urlString:urlString
+                                                  requestBlock:updateRequest
+                                                 progressBlock:progressBlock
+                                                 completeBlock:completeBlock];
+```
+
 ## Requirements
 
 ## Installation
