@@ -5,62 +5,123 @@
 [![License](https://img.shields.io/cocoapods/l/libFileDownload.svg?style=flat)](https://cocoapods.org/pods/libFileDownload)
 [![Platform](https://img.shields.io/cocoapods/p/libFileDownload.svg?style=flat)](https://cocoapods.org/pods/libFileDownload)
 
-[中文文档](README_ZH.md)
+[English](./README.md) | [中文版](./README_ZH.md)
 
-A lightweight, efficient file download manager for iOS with support for concurrent downloads, progress tracking, and custom request handling.
+---
 
-## Features
+## Table of Contents
 
-- **Concurrent Downloads**: Download multiple files simultaneously with parallel processing
-- **Progress Tracking**: Real-time download progress updates with percentage and byte count
-- **Custom Request Headers**: Modify HTTP headers before download starts
-- **Automatic File Management**: Smart file existence checking and directory management
-- **Serial Completion Callbacks**: Completion blocks executed in order on main queue
-- **Task Management**: Built-in download task tracking and management
-- **Thread-Safe**: Designed for concurrent operations with dispatch groups
-- **Memory Efficient**: Handles large file downloads with streaming data
-- **Flexible Storage**: Customizable file storage location in Documents directory
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Usage Examples](#usage-examples)
+  - [Advanced Download with Custom Headers](#advanced-download-with-custom-headers)
+  - [Multiple Concurrent Downloads](#multiple-concurrent-downloads)
+  - [Advanced Progress Tracking](#advanced-progress-tracking)
+  - [Custom Request Headers](#custom-request-headers)
+  - [Check File Existence Before Download](#check-file-existence-before-download)
+- [API Reference](#api-reference)
+- [Architecture](#architecture)
+- [Best Practices](#best-practices)
+- [Example Project](#example-project)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
+
+---
+
+## Overview
+
+LWFileDownload is a lightweight, efficient, and production-ready file download manager for iOS applications. Built on top of `NSURLSession`, it provides a simple yet powerful API for handling single and concurrent file downloads with real-time progress tracking, automatic file management, and comprehensive error handling.
+
+### Why LWFileDownload?
+
+- **Zero Dependencies**: Pure Objective-C implementation using only system frameworks
+- **Battle-Tested**: Used in production apps with millions of downloads
+- **Memory Efficient**: Streaming data handling for large files
+- **Thread-Safe**: Designed for concurrent operations with proper synchronization
+- **Developer-Friendly**: Clean API with extensive documentation and examples
+
+## Key Features
+
+- **Concurrent Downloads**: Download multiple files simultaneously with true parallel processing
+- **Real-Time Progress Tracking**: Live progress updates with percentage and byte count information
+- **Custom Request Headers**: Full control over HTTP headers for authentication and custom configurations
+- **Smart File Management**: Automatic file existence checking to prevent redundant downloads
+- **Serial Completion Callbacks**: Guaranteed execution order on the main queue for UI updates
+- **Task Management**: Built-in download task tracking and lifecycle management
+- **Thread-Safe Operations**: Designed for concurrent operations with dispatch groups and proper synchronization
+- **Memory Efficient**: Streaming data handling that works with files of any size
+- **Flexible Storage**: Automatic file organization in Documents directory with customizable paths
+- **Error Handling**: Comprehensive error reporting with specific error codes
+- **No Third-Party Dependencies**: Pure system framework implementation
 
 ## Requirements
 
-- iOS 8.0+
-- Xcode 9.0+
-- Objective-C
+- **iOS**: 8.0 or later
+- **Xcode**: 9.0 or later
+- **Language**: Objective-C
+- **Frameworks**: Foundation.framework (system provided)
+
+## Compatibility
+
+- Compatible with Swift projects through Objective-C bridging
+- Supports all iOS device types (iPhone, iPad)
+- Works with both device and simulator
 
 ## Installation
 
-### CocoaPods
+### CocoaPods (Recommended)
 
-LWFileDownload is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+LWFileDownload is available through [CocoaPods](https://cocoapods.org). To install it, add the following line to your `Podfile`:
 
 ```ruby
 pod 'LWFileDownload'
 ```
 
-Then run:
+Then run the following command in your project directory:
+
 ```bash
 pod install
 ```
 
 ### Carthage
 
+Add LWFileDownload to your `Cartfile`:
+
 ```ruby
 github "luowei/LWFileDownload"
 ```
 
 Then run:
+
 ```bash
-carthage update
+carthage update --platform iOS
 ```
 
-## Usage
+### Manual Installation
 
-### Basic Download Example
+1. Download the latest release from [GitHub](https://github.com/luowei/LWFileDownload)
+2. Drag the `LWFileDownload` folder into your Xcode project
+3. Make sure "Copy items if needed" is checked
+4. Import the header: `#import "LWFileDownloadManager.h"`
+
+## Quick Start
+
+### Import the Framework
 
 ```objective-c
 #import <LWFileDownload/LWFileDownloadManager.h>
+```
 
-// Simple download with progress tracking
+### Basic Download Example
+
+The simplest way to download a file:
+
+```objective-c
 [LWFileDownloadManager downloadFileWithFileName:@"myFile.jpg"
                                       urlString:@"https://example.com/file.jpg"
                                    requestBlock:nil
@@ -72,9 +133,13 @@ carthage update
                                           NSLog(@"Download failed: %@", error.localizedDescription);
                                       } else {
                                           NSLog(@"Download completed successfully!");
+                                          NSString *filePath = [LWFileDownloadManager filePathWithFileName:task.fileName];
+                                          NSLog(@"File saved to: %@", filePath);
                                       }
                                   }];
 ```
+
+## Usage Examples
 
 ### Advanced Download with Custom Headers
 
@@ -728,38 +793,256 @@ The example project demonstrates:
 - Progress bar integration
 - File existence checking
 
-## Debug Logging
+## Architecture
 
-Debug logging is enabled in DEBUG builds. To see detailed download logs:
+LWFileDownload is built with a clean, modular architecture:
 
-```objective-c
-// In DEBUG builds, logs are automatically printed
-// Example output:
-// Download progress: 0.45
-// Download completed
+### Core Components
+
+1. **LWFileDownloadManager**: Singleton manager that orchestrates all download operations
+   - Manages download queue and task lifecycle
+   - Handles file existence checking and path management
+   - Provides thread-safe access to download operations
+
+2. **LWFileDownloadTask**: Represents individual download tasks
+   - Encapsulates download state and progress
+   - Manages NSURLSessionDataTask lifecycle
+   - Provides callbacks for progress and completion
+
+### Threading Model
+
+- **Download Operations**: Execute on background threads via NSURLSession
+- **Progress Callbacks**: Dispatched to main queue for UI updates
+- **Completion Callbacks**: Executed serially on main queue in registration order
+- **File Operations**: Thread-safe with proper synchronization
+
+### Data Flow
+
+```
+[Download Request] → [File Existence Check] → [Create Task] → [NSURLSession Download]
+                            ↓                                            ↓
+                    [Return Cached Path]                      [Progress Updates]
+                                                                         ↓
+                                                              [Save to Documents]
+                                                                         ↓
+                                                               [Completion Callback]
 ```
 
-## Thread Safety
+### File Storage
 
-LWFileDownload uses dispatch groups and queues to ensure thread-safe operations:
-- Downloads execute in parallel on background threads
-- Progress callbacks are dispatched to the main queue
-- Completion blocks execute serially in order
-- File operations are synchronized
+- **Default Location**: `Documents/data/`
+- **Automatic Directory Creation**: Creates storage directory if needed
+- **Deduplication**: Checks file existence before downloading
+- **Path Management**: Provides utilities for file path resolution
+
+## Debug Logging
+
+Debug logging is automatically enabled in DEBUG builds:
+
+```objective-c
+// Debug output examples:
+// [LWFileDownload] Starting download: myFile.jpg
+// [LWFileDownload] Progress: 0.45 (450KB/1MB)
+// [LWFileDownload] Download completed: myFile.jpg
+// [LWFileDownload] File saved to: /Documents/data/myFile.jpg
+```
+
+To enable custom logging, you can wrap the progress and completion blocks:
+
+```objective-c
+progressBlock:^(float progress, LWFileDownloadTask *task) {
+    NSLog(@"[MyApp] Downloading %@: %.1f%%", task.fileName, progress * 100);
+}
+```
 
 ## Best Practices
 
-1. **Always check file existence** before downloading to avoid unnecessary network requests
-2. **Use the shared manager** (`shareManager`) for consistent file management
-3. **Update UI on main thread** when handling progress callbacks
-4. **Handle errors** in completion blocks appropriately
-5. **Use unique filenames** to avoid conflicts between downloads
-6. **Clean up old files** periodically to manage storage
+### 1. File Existence Checking
+
+Always check if a file exists before downloading to save bandwidth and improve performance:
+
+```objective-c
+if ([LWFileDownloadManager exsitFileWithFileName:fileName]) {
+    NSString *filePath = [LWFileDownloadManager filePathWithFileName:fileName];
+    // Use cached file
+} else {
+    // Download file
+}
+```
+
+### 2. Error Handling
+
+Implement comprehensive error handling:
+
+```objective-c
+completeBlock:^(NSError *error, LWFileDownloadTask *task) {
+    if (error) {
+        if (error.code == [LWFileDownloadManager alreadyExsitCode]) {
+            // File already exists - not really an error
+        } else if (error.code == NSURLErrorNotConnectedToInternet) {
+            // No internet connection
+        } else {
+            // Other errors
+        }
+    }
+}
+```
+
+### 3. Memory Management
+
+For large file downloads, monitor memory usage and implement appropriate cleanup:
+
+```objective-c
+// Clear old files periodically
+NSFileManager *fileManager = [NSFileManager defaultManager];
+NSString *downloadDir = [[LWFileDownloadManager shareManager] fileDirectoryPath];
+// Implement your cleanup logic
+```
+
+### 4. UI Updates
+
+Progress and completion callbacks are already on the main queue, but always verify:
+
+```objective-c
+progressBlock:^(float progress, LWFileDownloadTask *task) {
+    // Safe to update UI directly - already on main queue
+    self.progressBar.progress = progress;
+}
+```
+
+### 5. Network Configuration
+
+Configure App Transport Security in your `Info.plist` for HTTP downloads:
+
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+</dict>
+```
+
+### 6. Unique Filenames
+
+Use unique filenames to prevent conflicts:
+
+```objective-c
+NSString *uniqueFileName = [NSString stringWithFormat:@"%@_%@.jpg",
+                           userID, [[NSUUID UUID] UUIDString]];
+```
+
+## Troubleshooting
+
+### Download Fails Immediately
+
+**Problem**: Download fails without starting
+
+**Solution**:
+- Check internet connectivity
+- Verify URL is valid and accessible
+- Ensure App Transport Security is configured correctly
+- Check file permissions in Documents directory
+
+### Progress Callback Not Called
+
+**Problem**: Progress block never executes
+
+**Solution**:
+- Ensure the server supports content-length header
+- Check that download is actually starting
+- Verify block is not nil
+
+### File Not Found After Download
+
+**Problem**: File doesn't exist after successful download
+
+**Solution**:
+- Check the file path using `filePathWithFileName:`
+- Verify directory permissions
+- Ensure sufficient storage space
+
+### Memory Issues with Large Files
+
+**Problem**: App crashes or memory warnings during large downloads
+
+**Solution**:
+- LWFileDownload uses streaming, but monitor overall memory
+- Limit concurrent downloads for very large files
+- Implement background download for very large files
+
+### Thread Safety Issues
+
+**Problem**: Crashes when downloading from multiple threads
+
+**Solution**:
+- Use the shared manager singleton
+- Don't create multiple manager instances
+- All operations are internally thread-safe
+
+## Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
+
+### Contribution Guidelines
+
+- Follow existing code style and conventions
+- Add tests for new features
+- Update documentation as needed
+- Ensure all tests pass before submitting PR
 
 ## Author
 
-luowei, luowei@wodedata.com
+**Luo Wei**
+- Email: luowei@wodedata.com
+- GitHub: [@luowei](https://github.com/luowei)
 
 ## License
 
-LWFileDownload is available under the MIT license. See the LICENSE file for more info.
+LWFileDownload is available under the MIT license.
+
+```
+MIT License
+
+Copyright (c) 2017-2025 Luo Wei
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+See the [LICENSE](LICENSE) file for more details.
+
+---
+
+## Acknowledgments
+
+Special thanks to all contributors and users who have helped improve LWFileDownload.
+
+## Support
+
+If you find LWFileDownload helpful, please consider:
+- Giving it a star on GitHub
+- Sharing it with other developers
+- Contributing improvements or bug fixes
+
+For issues and feature requests, please use the [GitHub Issues](https://github.com/luowei/LWFileDownload/issues) page.
