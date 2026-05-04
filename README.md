@@ -1,5 +1,12 @@
 # LWFileDownload
 
+
+## graphify Knowledge Graph
+
+- Interactive graph: https://luowei.github.io/LWFileDownload/
+- Report: https://luowei.github.io/LWFileDownload/GRAPH_REPORT.md
+- Graph data: https://luowei.github.io/LWFileDownload/graph.json
+
 [![CI Status](https://img.shields.io/travis/luowei/libFileDownload.svg?style=flat)](https://travis-ci.org/luowei/libFileDownload)
 [![Version](https://img.shields.io/cocoapods/v/libFileDownload.svg?style=flat)](https://cocoapods.org/pods/libFileDownload)
 [![License](https://img.shields.io/cocoapods/l/libFileDownload.svg?style=flat)](https://cocoapods.org/pods/libFileDownload)
