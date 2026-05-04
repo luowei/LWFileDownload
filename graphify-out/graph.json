@@ -1,0 +1,2146 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "Package.swift",
+      "file_type": "code",
+      "source_file": "Package.swift",
+      "source_location": "L1",
+      "id": "package_swift",
+      "community": 8,
+      "norm_label": "package.swift"
+    },
+    {
+      "label": "LWViewController.h",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWViewController.h",
+      "source_location": "L1",
+      "id": "example_lwfiledownload_lwviewcontroller_h",
+      "community": 9,
+      "norm_label": "lwviewcontroller.h"
+    },
+    {
+      "label": "LWAppDelegate.h",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.h",
+      "source_location": "L1",
+      "id": "example_lwfiledownload_lwappdelegate_h",
+      "community": 10,
+      "norm_label": "lwappdelegate.h"
+    },
+    {
+      "label": "main.m",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/main.m",
+      "source_location": "L1",
+      "id": "example_lwfiledownload_main_m",
+      "community": 11,
+      "norm_label": "main.m"
+    },
+    {
+      "label": "LWAppDelegate.m",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L1",
+      "id": "example_lwfiledownload_lwappdelegate_m",
+      "community": 5,
+      "norm_label": "lwappdelegate.m"
+    },
+    {
+      "label": "LWAppDelegate",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L11",
+      "id": "lwfiledownload_lwappdelegate_lwappdelegate",
+      "community": 5,
+      "norm_label": "lwappdelegate"
+    },
+    {
+      "label": "-applicationdidFinishLaunchingWithOptions",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L13",
+      "id": "lwfiledownload_lwappdelegate_lwappdelegate_applicationdidfinishlaunchingwithoptions",
+      "community": 5,
+      "norm_label": "-applicationdidfinishlaunchingwithoptions"
+    },
+    {
+      "label": "-applicationWillResignActive",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L19",
+      "id": "lwfiledownload_lwappdelegate_lwappdelegate_applicationwillresignactive",
+      "community": 5,
+      "norm_label": "-applicationwillresignactive"
+    },
+    {
+      "label": "-applicationDidEnterBackground",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L25",
+      "id": "lwfiledownload_lwappdelegate_lwappdelegate_applicationdidenterbackground",
+      "community": 5,
+      "norm_label": "-applicationdidenterbackground"
+    },
+    {
+      "label": "-applicationWillEnterForeground",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L31",
+      "id": "lwfiledownload_lwappdelegate_lwappdelegate_applicationwillenterforeground",
+      "community": 5,
+      "norm_label": "-applicationwillenterforeground"
+    },
+    {
+      "label": "-applicationDidBecomeActive",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L36",
+      "id": "lwfiledownload_lwappdelegate_lwappdelegate_applicationdidbecomeactive",
+      "community": 5,
+      "norm_label": "-applicationdidbecomeactive"
+    },
+    {
+      "label": "-applicationWillTerminate",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L41",
+      "id": "lwfiledownload_lwappdelegate_lwappdelegate_applicationwillterminate",
+      "community": 5,
+      "norm_label": "-applicationwillterminate"
+    },
+    {
+      "label": "LWViewController.m",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L1",
+      "id": "example_lwfiledownload_lwviewcontroller_m",
+      "community": 3,
+      "norm_label": "lwviewcontroller.m"
+    },
+    {
+      "label": "LWViewController",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L12",
+      "id": "lwfiledownload_lwviewcontroller_lwviewcontroller",
+      "community": 3,
+      "norm_label": "lwviewcontroller"
+    },
+    {
+      "label": "-viewDidLoad",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L25",
+      "id": "lwfiledownload_lwviewcontroller_lwviewcontroller_viewdidload",
+      "community": 3,
+      "norm_label": "-viewdidload"
+    },
+    {
+      "label": "-downloadFileNameurlStringupdateProgressBlockserialCompleteBlock",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L43",
+      "id": "lwfiledownload_lwviewcontroller_lwviewcontroller_downloadfilenameurlstringupdateprogressblockserialcompleteblock",
+      "community": 3,
+      "norm_label": "-downloadfilenameurlstringupdateprogressblockserialcompleteblock"
+    },
+    {
+      "label": "-task1BtnAction",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L75",
+      "id": "lwfiledownload_lwviewcontroller_lwviewcontroller_task1btnaction",
+      "community": 3,
+      "norm_label": "-task1btnaction"
+    },
+    {
+      "label": "-task2BtnAction",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L84",
+      "id": "lwfiledownload_lwviewcontroller_lwviewcontroller_task2btnaction",
+      "community": 3,
+      "norm_label": "-task2btnaction"
+    },
+    {
+      "label": "-task3BtnAction",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L93",
+      "id": "lwfiledownload_lwviewcontroller_lwviewcontroller_task3btnaction",
+      "community": 3,
+      "norm_label": "-task3btnaction"
+    },
+    {
+      "label": "-allBtnAction",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L102",
+      "id": "lwfiledownload_lwviewcontroller_lwviewcontroller_allbtnaction",
+      "community": 3,
+      "norm_label": "-allbtnaction"
+    },
+    {
+      "label": "-serialHandle",
+      "file_type": "code",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L134",
+      "id": "lwfiledownload_lwviewcontroller_lwviewcontroller_serialhandle",
+      "community": 3,
+      "norm_label": "-serialhandle"
+    },
+    {
+      "label": "LWFileDownloadManager.swift",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L1",
+      "id": "lwfiledownload_swift_classes_lwfiledownloadmanager_swift",
+      "community": 0,
+      "norm_label": "lwfiledownloadmanager.swift"
+    },
+    {
+      "label": "LWDLLog()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L10",
+      "id": "classes_lwfiledownloadmanager_lwdllog",
+      "community": 0,
+      "norm_label": "lwdllog()"
+    },
+    {
+      "label": "LWFileDownloadManager",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L8",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "community": 0,
+      "norm_label": "lwfiledownloadmanager"
+    },
+    {
+      "label": "NSObject",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "nsobject",
+      "community": 4,
+      "norm_label": "nsobject"
+    },
+    {
+      "label": ".init()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L33",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_init",
+      "community": 0,
+      "norm_label": ".init()"
+    },
+    {
+      "label": ".filePath()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L53",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_filepath",
+      "community": 0,
+      "norm_label": ".filepath()"
+    },
+    {
+      "label": ".downloadFile()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L86",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_downloadfile",
+      "community": 0,
+      "norm_label": ".downloadfile()"
+    },
+    {
+      "label": ".download()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L138",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_download",
+      "community": 0,
+      "norm_label": ".download()"
+    },
+    {
+      "label": ".createDirectory()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L179",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_createdirectory",
+      "community": 0,
+      "norm_label": ".createdirectory()"
+    },
+    {
+      "label": "-documentDirectoryPath",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L197",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_documentdirectorypath",
+      "community": 0,
+      "norm_label": "-documentdirectorypath"
+    },
+    {
+      "label": ".write()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L206",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_write",
+      "community": 0,
+      "norm_label": ".write()"
+    },
+    {
+      "label": ".fileExists()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L219",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_fileexists",
+      "community": 0,
+      "norm_label": ".fileexists()"
+    },
+    {
+      "label": ".removeFile()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L230",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_removefile",
+      "community": 0,
+      "norm_label": ".removefile()"
+    },
+    {
+      "label": "LWFileDownloadExamples.swift",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L1",
+      "id": "lwfiledownload_swift_classes_lwfiledownloadexamples_swift",
+      "community": 1,
+      "norm_label": "lwfiledownloadexamples.swift"
+    },
+    {
+      "label": "SimpleDownloadExample",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L22",
+      "id": "classes_lwfiledownloadexamples_simpledownloadexample",
+      "community": 1,
+      "norm_label": "simpledownloadexample"
+    },
+    {
+      "label": ".downloadFile()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L24",
+      "id": "classes_lwfiledownloadexamples_simpledownloadexample_downloadfile",
+      "community": 1,
+      "norm_label": ".downloadfile()"
+    },
+    {
+      "label": "CustomRequestExample",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L53",
+      "id": "classes_lwfiledownloadexamples_customrequestexample",
+      "community": 1,
+      "norm_label": "customrequestexample"
+    },
+    {
+      "label": ".downloadWithCustomHeaders()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L55",
+      "id": "classes_lwfiledownloadexamples_customrequestexample_downloadwithcustomheaders",
+      "community": 1,
+      "norm_label": ".downloadwithcustomheaders()"
+    },
+    {
+      "label": "FileExistenceExample",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L82",
+      "id": "classes_lwfiledownloadexamples_fileexistenceexample",
+      "community": 1,
+      "norm_label": "fileexistenceexample"
+    },
+    {
+      "label": ".checkAndDownload()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L84",
+      "id": "classes_lwfiledownloadexamples_fileexistenceexample_checkanddownload",
+      "community": 1,
+      "norm_label": ".checkanddownload()"
+    },
+    {
+      "label": "HelperMethodsExample",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L100",
+      "id": "classes_lwfiledownloadexamples_helpermethodsexample",
+      "community": 1,
+      "norm_label": "helpermethodsexample"
+    },
+    {
+      "label": ".useHelperMethods()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L102",
+      "id": "classes_lwfiledownloadexamples_helpermethodsexample_usehelpermethods",
+      "community": 1,
+      "norm_label": ".usehelpermethods()"
+    },
+    {
+      "label": "SingleDownloadExampleView",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L120",
+      "id": "classes_lwfiledownloadexamples_singledownloadexampleview",
+      "community": 1,
+      "norm_label": "singledownloadexampleview"
+    },
+    {
+      "label": "View",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "view",
+      "community": 1,
+      "norm_label": "view"
+    },
+    {
+      "label": "MultipleDownloadsExampleView",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L139",
+      "id": "classes_lwfiledownloadexamples_multipledownloadsexampleview",
+      "community": 1,
+      "norm_label": "multipledownloadsexampleview"
+    },
+    {
+      "label": "MultipleDownloadsExample",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L173",
+      "id": "classes_lwfiledownloadexamples_multipledownloadsexample",
+      "community": 1,
+      "norm_label": "multipledownloadsexample"
+    },
+    {
+      "label": ".downloadMultipleFiles()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L175",
+      "id": "classes_lwfiledownloadexamples_multipledownloadsexample_downloadmultiplefiles",
+      "community": 1,
+      "norm_label": ".downloadmultiplefiles()"
+    },
+    {
+      "label": "DownloadViewController",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L205",
+      "id": "classes_lwfiledownloadexamples_downloadviewcontroller",
+      "community": 1,
+      "norm_label": "downloadviewcontroller"
+    },
+    {
+      "label": "UIViewController",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "uiviewcontroller",
+      "community": 1,
+      "norm_label": "uiviewcontroller"
+    },
+    {
+      "label": ".viewDidLoad()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L213",
+      "id": "classes_lwfiledownloadexamples_downloadviewcontroller_viewdidload",
+      "community": 1,
+      "norm_label": ".viewdidload()"
+    },
+    {
+      "label": ".setupUI()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L242",
+      "id": "classes_lwfiledownloadexamples_downloadviewcontroller_setupui",
+      "community": 1,
+      "norm_label": ".setupui()"
+    },
+    {
+      "label": ".startDownload()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L263",
+      "id": "classes_lwfiledownloadexamples_downloadviewcontroller_startdownload",
+      "community": 1,
+      "norm_label": ".startdownload()"
+    },
+    {
+      "label": "LWFileDownloadTask.swift",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L1",
+      "id": "lwfiledownload_swift_classes_lwfiledownloadtask_swift",
+      "community": 4,
+      "norm_label": "lwfiledownloadtask.swift"
+    },
+    {
+      "label": "LWFileDownloadTask",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L10",
+      "id": "classes_lwfiledownloadtask_lwfiledownloadtask",
+      "community": 4,
+      "norm_label": "lwfiledownloadtask"
+    },
+    {
+      "label": ".init()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L33",
+      "id": "classes_lwfiledownloadtask_lwfiledownloadtask_init",
+      "community": 4,
+      "norm_label": ".init()"
+    },
+    {
+      "label": ".start()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L41",
+      "id": "classes_lwfiledownloadtask_lwfiledownloadtask_start",
+      "community": 4,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".cancel()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L45",
+      "id": "classes_lwfiledownloadtask_lwfiledownloadtask_cancel",
+      "community": 4,
+      "norm_label": ".cancel()"
+    },
+    {
+      "label": ".downloadFile()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L51",
+      "id": "classes_lwfiledownloadtask_lwfiledownloadtask_downloadfile",
+      "community": 4,
+      "norm_label": ".downloadfile()"
+    },
+    {
+      "label": "URLSessionDataDelegate",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "urlsessiondatadelegate",
+      "community": 4,
+      "norm_label": "urlsessiondatadelegate"
+    },
+    {
+      "label": ".urlSession()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L117",
+      "id": "classes_lwfiledownloadtask_lwfiledownloadtask_urlsession",
+      "community": 4,
+      "norm_label": ".urlsession()"
+    },
+    {
+      "label": "LWFileDownloadView.swift",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L1",
+      "id": "lwfiledownload_swift_classes_lwfiledownloadview_swift",
+      "community": 6,
+      "norm_label": "lwfiledownloadview.swift"
+    },
+    {
+      "label": "LWFileDownloadProgressView",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L11",
+      "id": "classes_lwfiledownloadview_lwfiledownloadprogressview",
+      "community": 6,
+      "norm_label": "lwfiledownloadprogressview"
+    },
+    {
+      "label": ".init()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L16",
+      "id": "classes_lwfiledownloadview_lwfiledownloadprogressview_init",
+      "community": 6,
+      "norm_label": ".init()"
+    },
+    {
+      "label": "LWMultipleDownloadsView",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L82",
+      "id": "classes_lwfiledownloadview_lwmultipledownloadsview",
+      "community": 6,
+      "norm_label": "lwmultipledownloadsview"
+    },
+    {
+      "label": ".init()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L87",
+      "id": "classes_lwfiledownloadview_lwmultipledownloadsview_init",
+      "community": 6,
+      "norm_label": ".init()"
+    },
+    {
+      "label": "LWFileDownloadProgressView_Previews",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L157",
+      "id": "classes_lwfiledownloadview_lwfiledownloadprogressview_previews",
+      "community": 6,
+      "norm_label": "lwfiledownloadprogressview_previews"
+    },
+    {
+      "label": "PreviewProvider",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "previewprovider",
+      "community": 6,
+      "norm_label": "previewprovider"
+    },
+    {
+      "label": "LWMultipleDownloadsView_Previews",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L169",
+      "id": "classes_lwfiledownloadview_lwmultipledownloadsview_previews",
+      "community": 6,
+      "norm_label": "lwmultipledownloadsview_previews"
+    },
+    {
+      "label": "LWFileDownloadViewModel.swift",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L1",
+      "id": "lwfiledownload_swift_classes_lwfiledownloadviewmodel_swift",
+      "community": 2,
+      "norm_label": "lwfiledownloadviewmodel.swift"
+    },
+    {
+      "label": "LWFileDownloadViewModel",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L11",
+      "id": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel",
+      "community": 2,
+      "norm_label": "lwfiledownloadviewmodel"
+    },
+    {
+      "label": "ObservableObject",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "observableobject",
+      "community": 2,
+      "norm_label": "observableobject"
+    },
+    {
+      "label": ".init()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L29",
+      "id": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_init",
+      "community": 2,
+      "norm_label": ".init()"
+    },
+    {
+      "label": ".startDownload()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L37",
+      "id": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_startdownload",
+      "community": 2,
+      "norm_label": ".startdownload()"
+    },
+    {
+      "label": ".cancelDownload()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L73",
+      "id": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_canceldownload",
+      "community": 2,
+      "norm_label": ".canceldownload()"
+    },
+    {
+      "label": ".fileExists()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L79",
+      "id": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_fileexists",
+      "community": 2,
+      "norm_label": ".fileexists()"
+    },
+    {
+      "label": ".filePath()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L84",
+      "id": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_filepath",
+      "community": 2,
+      "norm_label": ".filepath()"
+    },
+    {
+      "label": "LWMultipleDownloadsViewModel",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L91",
+      "id": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel",
+      "community": 2,
+      "norm_label": "lwmultipledownloadsviewmodel"
+    },
+    {
+      "label": ".addDownload()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L106",
+      "id": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_adddownload",
+      "community": 2,
+      "norm_label": ".adddownload()"
+    },
+    {
+      "label": ".startAll()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L125",
+      "id": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_startall",
+      "community": 2,
+      "norm_label": ".startall()"
+    },
+    {
+      "label": ".cancelAll()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L132",
+      "id": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_cancelall",
+      "community": 2,
+      "norm_label": ".cancelall()"
+    },
+    {
+      "label": ".removeCompleted()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L139",
+      "id": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_removecompleted",
+      "community": 2,
+      "norm_label": ".removecompleted()"
+    },
+    {
+      "label": ".updateOverallProgress()",
+      "file_type": "code",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L145",
+      "id": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_updateoverallprogress",
+      "community": 2,
+      "norm_label": ".updateoverallprogress()"
+    },
+    {
+      "label": "LWFileDownloadManager.m",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L1",
+      "id": "lwfiledownload_classes_lwfiledownloadmanager_m",
+      "community": 7,
+      "norm_label": "lwfiledownloadmanager.m"
+    },
+    {
+      "label": "-shareManager",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L20",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_sharemanager",
+      "community": 0,
+      "norm_label": "-sharemanager"
+    },
+    {
+      "label": "-alreadyExsitCode",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L28",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_alreadyexsitcode",
+      "community": 0,
+      "norm_label": "-alreadyexsitcode"
+    },
+    {
+      "label": "-taskMap",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L32",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_taskmap",
+      "community": 0,
+      "norm_label": "-taskmap"
+    },
+    {
+      "label": "-filePathWithFileNamedownloadURLStringrequestBlockprogressBlockcompleteBlock",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L40",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_filepathwithfilenamedownloadurlstringrequestblockprogressblockcompleteblock",
+      "community": 0,
+      "norm_label": "-filepathwithfilenamedownloadurlstringrequestblockprogressblockcompleteblock"
+    },
+    {
+      "label": "-downloadFileWithFileNameurlStringrequestBlockprogressBlockcompleteBlock",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L57",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_downloadfilewithfilenameurlstringrequestblockprogressblockcompleteblock",
+      "community": 0,
+      "norm_label": "-downloadfilewithfilenameurlstringrequestblockprogressblockcompleteblock"
+    },
+    {
+      "label": "-downloadWithFileNameurlStringrequestBlockprogressBlockcompleteBlock",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L116",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_downloadwithfilenameurlstringrequestblockprogressblockcompleteblock",
+      "community": 0,
+      "norm_label": "-downloadwithfilenameurlstringrequestblockprogressblockcompleteblock"
+    },
+    {
+      "label": "-fileDirectoryPath",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L164",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_filedirectorypath",
+      "community": 0,
+      "norm_label": "-filedirectorypath"
+    },
+    {
+      "label": "-removeFileWithFilePath",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L179",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_removefilewithfilepath",
+      "community": 0,
+      "norm_label": "-removefilewithfilepath"
+    },
+    {
+      "label": "-writeDatatoFilePath",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L190",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_writedatatofilepath",
+      "community": 0,
+      "norm_label": "-writedatatofilepath"
+    },
+    {
+      "label": "-createDirectoryIfNotExsitPath",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L207",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_createdirectoryifnotexsitpath",
+      "community": 0,
+      "norm_label": "-createdirectoryifnotexsitpath"
+    },
+    {
+      "label": "-exsitFileWithFileName",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L223",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_exsitfilewithfilename",
+      "community": 0,
+      "norm_label": "-exsitfilewithfilename"
+    },
+    {
+      "label": "-filePathWithFileName",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L229",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadmanager_filepathwithfilename",
+      "community": 0,
+      "norm_label": "-filepathwithfilename"
+    },
+    {
+      "label": "LWFileDownloadTask",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L242",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadtask",
+      "community": 7,
+      "norm_label": "lwfiledownloadtask"
+    },
+    {
+      "label": "-taskWithURLStringfileName",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L245",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadtask_taskwithurlstringfilename",
+      "community": 7,
+      "norm_label": "-taskwithurlstringfilename"
+    },
+    {
+      "label": "-start",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L254",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadtask_start",
+      "community": 7,
+      "norm_label": "-start"
+    },
+    {
+      "label": "-downloadCustomFileWithfileNameURLString",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L260",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadtask_downloadcustomfilewithfilenameurlstring",
+      "community": 7,
+      "norm_label": "-downloadcustomfilewithfilenameurlstring"
+    },
+    {
+      "label": "-URLSessiondataTaskdidReceiveResponsecompletionHandler",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L302",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadtask_urlsessiondatataskdidreceiveresponsecompletionhandler",
+      "community": 7,
+      "norm_label": "-urlsessiondatataskdidreceiveresponsecompletionhandler"
+    },
+    {
+      "label": "-URLSessiondataTaskdidReceiveData",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L318",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadtask_urlsessiondatataskdidreceivedata",
+      "community": 7,
+      "norm_label": "-urlsessiondatataskdidreceivedata"
+    },
+    {
+      "label": "-URLSessiontaskdidCompleteWithError",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L339",
+      "id": "classes_lwfiledownloadmanager_lwfiledownloadtask_urlsessiontaskdidcompletewitherror",
+      "community": 7,
+      "norm_label": "-urlsessiontaskdidcompletewitherror"
+    },
+    {
+      "label": "LWFileDownloadManager.h",
+      "file_type": "code",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.h",
+      "source_location": "L1",
+      "id": "lwfiledownload_classes_lwfiledownloadmanager_h",
+      "community": 12,
+      "norm_label": "lwfiledownloadmanager.h"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "example_lwfiledownload_lwappdelegate_m",
+      "target": "lwfiledownload_lwappdelegate_lwappdelegate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwappdelegate_lwappdelegate",
+      "target": "lwfiledownload_lwappdelegate_lwappdelegate_applicationdidfinishlaunchingwithoptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwappdelegate_lwappdelegate",
+      "target": "lwfiledownload_lwappdelegate_lwappdelegate_applicationwillresignactive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwappdelegate_lwappdelegate",
+      "target": "lwfiledownload_lwappdelegate_lwappdelegate_applicationdidenterbackground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwappdelegate_lwappdelegate",
+      "target": "lwfiledownload_lwappdelegate_lwappdelegate_applicationwillenterforeground",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwappdelegate_lwappdelegate",
+      "target": "lwfiledownload_lwappdelegate_lwappdelegate_applicationdidbecomeactive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWAppDelegate.m",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwappdelegate_lwappdelegate",
+      "target": "lwfiledownload_lwappdelegate_lwappdelegate_applicationwillterminate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "example_lwfiledownload_lwviewcontroller_m",
+      "target": "lwfiledownload_lwviewcontroller_lwviewcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwviewcontroller_lwviewcontroller",
+      "target": "lwfiledownload_lwviewcontroller_lwviewcontroller_viewdidload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwviewcontroller_lwviewcontroller",
+      "target": "lwfiledownload_lwviewcontroller_lwviewcontroller_downloadfilenameurlstringupdateprogressblockserialcompleteblock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwviewcontroller_lwviewcontroller",
+      "target": "lwfiledownload_lwviewcontroller_lwviewcontroller_task1btnaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwviewcontroller_lwviewcontroller",
+      "target": "lwfiledownload_lwviewcontroller_lwviewcontroller_task2btnaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwviewcontroller_lwviewcontroller",
+      "target": "lwfiledownload_lwviewcontroller_lwviewcontroller_task3btnaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwviewcontroller_lwviewcontroller",
+      "target": "lwfiledownload_lwviewcontroller_lwviewcontroller_allbtnaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Example/LWFileDownload/LWViewController.m",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "lwfiledownload_lwviewcontroller_lwviewcontroller",
+      "target": "lwfiledownload_lwviewcontroller_lwviewcontroller_serialhandle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadmanager_swift",
+      "target": "classes_lwfiledownloadmanager_lwdllog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadmanager_swift",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager_createdirectory",
+      "target": "classes_lwfiledownloadmanager_lwdllog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L210",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager_write",
+      "target": "classes_lwfiledownloadmanager_lwdllog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager_removefile",
+      "target": "classes_lwfiledownloadmanager_lwdllog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask_urlsession",
+      "target": "classes_lwfiledownloadmanager_lwdllog"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "nsobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L225",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_filepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_downloadfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_download",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_createdirectory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L197",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_documentdirectorypath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_write",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L219",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_fileexists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_removefile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "lwfiledownload_classes_lwfiledownloadmanager_m",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_sharemanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_alreadyexsitcode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_taskmap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_filepathwithfilenamedownloadurlstringrequestblockprogressblockcompleteblock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_downloadfilewithfilenameurlstringrequestblockprogressblockcompleteblock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_downloadwithfilenameurlstringrequestblockprogressblockcompleteblock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_filedirectorypath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_removefilewithfilepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_writedatatofilepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L207",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_createdirectoryifnotexsitpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_exsitfilewithfilename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L229",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_filepathwithfilename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask",
+      "target": "nsobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager_filepath",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_downloadfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager_downloadfile",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_fileexists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager_downloadfile",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_download",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager_createdirectory",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_fileexists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadManager.swift",
+      "source_location": "L201",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadmanager_documentdirectorypath",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadmanager_createdirectory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadexamples_swift",
+      "target": "classes_lwfiledownloadexamples_simpledownloadexample",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadexamples_swift",
+      "target": "classes_lwfiledownloadexamples_customrequestexample",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadexamples_swift",
+      "target": "classes_lwfiledownloadexamples_fileexistenceexample",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadexamples_swift",
+      "target": "classes_lwfiledownloadexamples_helpermethodsexample",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadexamples_swift",
+      "target": "classes_lwfiledownloadexamples_singledownloadexampleview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadexamples_swift",
+      "target": "classes_lwfiledownloadexamples_multipledownloadsexampleview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadexamples_swift",
+      "target": "classes_lwfiledownloadexamples_multipledownloadsexample",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadexamples_swift",
+      "target": "classes_lwfiledownloadexamples_downloadviewcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_simpledownloadexample",
+      "target": "classes_lwfiledownloadexamples_simpledownloadexample_downloadfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_customrequestexample_downloadwithcustomheaders",
+      "target": "classes_lwfiledownloadexamples_simpledownloadexample_downloadfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_multipledownloadsexample_downloadmultiplefiles",
+      "target": "classes_lwfiledownloadexamples_simpledownloadexample_downloadfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_customrequestexample",
+      "target": "classes_lwfiledownloadexamples_customrequestexample_downloadwithcustomheaders",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_fileexistenceexample",
+      "target": "classes_lwfiledownloadexamples_fileexistenceexample_checkanddownload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_helpermethodsexample",
+      "target": "classes_lwfiledownloadexamples_helpermethodsexample_usehelpermethods",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_singledownloadexampleview",
+      "target": "view",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_multipledownloadsexampleview",
+      "target": "view",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadview_lwfiledownloadprogressview",
+      "target": "view",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadview_lwmultipledownloadsview",
+      "target": "view",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_multipledownloadsexample",
+      "target": "classes_lwfiledownloadexamples_multipledownloadsexample_downloadmultiplefiles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L205",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_downloadviewcontroller",
+      "target": "uiviewcontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L213",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_downloadviewcontroller",
+      "target": "classes_lwfiledownloadexamples_downloadviewcontroller_viewdidload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L242",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_downloadviewcontroller",
+      "target": "classes_lwfiledownloadexamples_downloadviewcontroller_setupui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L263",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_downloadviewcontroller",
+      "target": "classes_lwfiledownloadexamples_downloadviewcontroller_startdownload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L215",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_downloadviewcontroller_viewdidload",
+      "target": "classes_lwfiledownloadexamples_downloadviewcontroller_setupui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadExamples.swift",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadexamples_downloadviewcontroller_viewdidload",
+      "target": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadtask_swift",
+      "target": "classes_lwfiledownloadtask_lwfiledownloadtask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadtask_lwfiledownloadtask_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadtask_lwfiledownloadtask_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadtask_lwfiledownloadtask_cancel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadtask_lwfiledownloadtask_downloadfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask",
+      "target": "urlsessiondatadelegate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadtask_lwfiledownloadtask_urlsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask_start",
+      "target": "classes_lwfiledownloadtask_lwfiledownloadtask_downloadfile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask_downloadfile",
+      "target": "classes_lwfiledownloadtask_lwfiledownloadtask_cancel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadTask.swift",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadtask_lwfiledownloadtask_downloadfile",
+      "target": "classes_lwfiledownloadtask_lwfiledownloadtask_urlsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadview_swift",
+      "target": "classes_lwfiledownloadview_lwfiledownloadprogressview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadview_swift",
+      "target": "classes_lwfiledownloadview_lwmultipledownloadsview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadview_swift",
+      "target": "classes_lwfiledownloadview_lwfiledownloadprogressview_previews",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadview_swift",
+      "target": "classes_lwfiledownloadview_lwmultipledownloadsview_previews",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadview_lwfiledownloadprogressview",
+      "target": "classes_lwfiledownloadview_lwfiledownloadprogressview_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadview_lwmultipledownloadsview",
+      "target": "classes_lwfiledownloadview_lwmultipledownloadsview_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadview_lwfiledownloadprogressview_previews",
+      "target": "previewprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadView.swift",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadview_lwmultipledownloadsview_previews",
+      "target": "previewprovider",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadviewmodel_swift",
+      "target": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "lwfiledownload_swift_classes_lwfiledownloadviewmodel_swift",
+      "target": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel",
+      "target": "observableobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel",
+      "target": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel",
+      "target": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_startdownload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel",
+      "target": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_canceldownload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel",
+      "target": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_fileexists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel",
+      "target": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_filepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_adddownload",
+      "target": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel",
+      "target": "observableobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_startall",
+      "target": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_startdownload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_cancelall",
+      "target": "classes_lwfiledownloadviewmodel_lwfiledownloadviewmodel_canceldownload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel",
+      "target": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_adddownload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel",
+      "target": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_startall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel",
+      "target": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_cancelall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel",
+      "target": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_removecompleted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel",
+      "target": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_updateoverallprogress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload_swift/Classes/LWFileDownloadViewModel.swift",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_adddownload",
+      "target": "classes_lwfiledownloadviewmodel_lwmultipledownloadsviewmodel_updateoverallprogress",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L242",
+      "weight": 1.0,
+      "source": "lwfiledownload_classes_lwfiledownloadmanager_m",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadtask",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadtask_taskwithurlstringfilename",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L254",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadtask_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadtask_downloadcustomfilewithfilenameurlstring",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L302",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadtask_urlsessiondatataskdidreceiveresponsecompletionhandler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L318",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadtask_urlsessiondatataskdidreceivedata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "LWFileDownload/Classes/LWFileDownloadManager.m",
+      "source_location": "L339",
+      "weight": 1.0,
+      "source": "classes_lwfiledownloadmanager_lwfiledownloadtask",
+      "target": "classes_lwfiledownloadmanager_lwfiledownloadtask_urlsessiontaskdidcompletewitherror",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
